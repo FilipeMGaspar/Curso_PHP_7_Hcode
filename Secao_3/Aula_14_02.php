@@ -19,4 +19,16 @@
 	echo $frutas[2];
 
 	$nascimento = new DateTime();//Orientação a objecto
+	echo "<br><br>";
+	var_dump($nascimento);
+	echo "<br><br>";
+
+	////////////////////////////////////////
+	//Tipos de dados especiais
+	$arquivo = fopen("Aula_14.php", "r");
+	var_dump($arquivo);
+	echo "<br><br>";
+
+	$nula = null;
+	var_dump($nula);
 ?>
