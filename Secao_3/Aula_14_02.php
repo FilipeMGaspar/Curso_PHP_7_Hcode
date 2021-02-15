@@ -11,5 +11,9 @@
 
 	$bloqueado = false;//boleano
 
-	//
-?>
+
+	//************ *******************
+	//Tipos de dados compostos
+	$frutas = array("abacaxi","laranja","manga");
+
+	echo $frutas[2];
