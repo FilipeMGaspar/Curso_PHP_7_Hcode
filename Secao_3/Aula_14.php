@@ -6,5 +6,12 @@
 
 	//$1nome = "João"; //Declaração incorrecta não deve inicair as variaveis com números
 	//$%nome = "João"; //Declaração incorrecta Não utilize caracteres especiais
-	
+
+	//Comentário de uma linha
+
+	/*
+	*Comentário de
+	*Multiplas linhas
+	*Utilize com resposabilidade
+	*/
 ?>
