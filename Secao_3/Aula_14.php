@@ -4,6 +4,14 @@
 
 	$nome1= "João";
 
+	$sobrenome = "Rangel";
+
+	$nomeCompleto = $nome1 . $sobrenome;
+
+	echo $nomeCompleto;
+
+	exit;
+	
 	echo $nome1;
 
 	echo "<br>";
