@@ -6,12 +6,12 @@
 
 	$sobrenome = "Rangel";
 
-	$nomeCompleto = $nome1 . $sobrenome;
+	$nomeCompleto = $nome1 . " " .  $sobrenome;//Concatenação de duas string
 
 	echo $nomeCompleto;
 
 	exit;
-	
+
 	echo $nome1;
 
 	echo "<br>";
