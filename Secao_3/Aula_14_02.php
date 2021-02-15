@@ -17,3 +17,6 @@
 	$frutas = array("abacaxi","laranja","manga");
 
 	echo $frutas[2];
+
+	$nascimento = new DateTime();//Orientação a objecto
+?>
