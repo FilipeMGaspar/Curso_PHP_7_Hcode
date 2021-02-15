@@ -4,6 +4,8 @@
 
 	$nome1= "João";
 
+	echo $nome1;
+
 	//$1nome = "João"; //Declaração incorrecta não deve inicair as variaveis com números
 	//$%nome = "João"; //Declaração incorrecta Não utilize caracteres especiais
 
