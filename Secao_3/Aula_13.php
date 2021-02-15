@@ -1,4 +1,4 @@
 <?php
+	$_nome = "hcode";
 	
-
 ?>
