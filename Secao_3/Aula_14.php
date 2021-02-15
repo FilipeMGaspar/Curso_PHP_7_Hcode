@@ -6,6 +6,12 @@
 
 	echo $nome1;
 
+	echo "<br>";
+
+	unset($nome1);
+
+	echo $nome1;
+
 	//$1nome = "João"; //Declaração incorrecta não deve inicair as variaveis com números
 	//$%nome = "João"; //Declaração incorrecta Não utilize caracteres especiais
 
