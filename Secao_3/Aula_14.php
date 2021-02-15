@@ -10,8 +10,10 @@
 
 	unset($nome1);
 
-	echo $nome1;
-
+	if (isset($nome1) ) {
+		echo $nome1;
+	}
+	
 	//$1nome = "João"; //Declaração incorrecta não deve inicair as variaveis com números
 	//$%nome = "João"; //Declaração incorrecta Não utilize caracteres especiais
 
