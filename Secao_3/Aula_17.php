@@ -84,5 +84,9 @@
 	echo "<br>". --$a;// Decremento pré decremento
 	echo "<br>". $a;
 
-	
+	//Precedencia de operadores
+	echo "<h2>Precedencia de operadores</h2>";
+
+	$resultado = 10 + 3 /2;
+	echo $resultado;
 ?>
