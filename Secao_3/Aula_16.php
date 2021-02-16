@@ -3,14 +3,15 @@
 	$nome = "Glaucio";
 
 	function teste() {
+		global $nome;
 		echo $nome;
 	}
 
 	function teste2() {
-		$Sobrenome = "Qualquer";
+		echo $nome
 	}
 
 	teste();
 
-	echo "$Sobrenome";
+	//echo "$Sobrenome";
 ?>
