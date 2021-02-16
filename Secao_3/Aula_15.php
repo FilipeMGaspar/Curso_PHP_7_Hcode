@@ -9,5 +9,11 @@
 	echo $b;
 	echo "<br><br>";
 
+	$ip = $_SERVER["REMOTE_ADDR"];
+	echo $ip;
+	echo "<br><br>";
 
+	$ip = $_SERVER["SCRIPT_NAME"];
+	echo $ip;
+	echo "<br><br>";
 ?>
