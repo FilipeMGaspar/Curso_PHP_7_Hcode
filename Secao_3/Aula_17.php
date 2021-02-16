@@ -52,5 +52,5 @@
 	echo "<br>";
 	var_dump($a === $b);
 	echo "<br>";
-	var_dump($a != $b);
+	var_dump($a !== $b);
 ?>
