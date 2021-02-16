@@ -27,4 +27,12 @@
 	//Operadores Aritméticos
 	echo "<br><br>";
 	echo "<h2>Operadores Aritméticos</h2>";
+
+	$a = 10;
+	$b = 2;
+
+	echo "Soma = " . ($a + $b);
+
+	echo "<br><br>Subtração = " . ($a - $b);
+
 ?>
