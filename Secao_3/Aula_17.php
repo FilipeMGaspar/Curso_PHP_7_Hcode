@@ -58,10 +58,9 @@
 	echo "<br>";
 	var_dump($a !== $b);
 
-	//
-	echo "<h2></h2>";
-	$a = 50;
+	//Spaceship Operator
+	echo "<h2>Spaceship Operator</h2>";
+	$a = 35;
 	$b = 35;
-
 	var_dump($a <=> $b);
 ?>
