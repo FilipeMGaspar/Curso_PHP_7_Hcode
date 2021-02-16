@@ -78,6 +78,11 @@
 	echo "<h2>Operador de Incremento e Decremento</h2>";
 	$a = 10;
 
-	echo $a++;
+	echo $a++;//Incremento pós incremento
 	echo "<br>".$a;
+
+	echo "<br>". --$a;// Decremento pré decremento
+	echo "<br>". $a;
+
+	
 ?>
