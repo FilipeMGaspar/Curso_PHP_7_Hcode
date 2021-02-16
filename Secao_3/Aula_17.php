@@ -36,5 +36,8 @@
 	echo "<br> Multiplicação =" . ($a * $b);
 
 	echo "<br>Divisão = " . ($a / $b);
-	
+
+	echo "<br>Resto da divisão = " . ($a % $b);
+
+	echo "<br>Exponenciação = " . $a ** $b;
 ?>
