@@ -3,15 +3,16 @@
 	$nome = "Glaucio";
 
 	function teste() {
-		global $nome;
+		global $nome; //Direciona para a variavel global
 		echo $nome;
 	}
 
 	function teste2() {
-		echo $nome
+		$nome = "João"; //Variavel local
+		echo $nome . " agora no teste2";
 	}
 
 	teste();
 
-	//echo "$Sobrenome";
+	teste2();
 ?>
