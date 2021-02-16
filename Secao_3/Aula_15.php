@@ -1,5 +1,8 @@
 <?php
 
-	$nome=$_GET["a"];
+	$nome=(int)$_GET["a"];
 	var_dump($nome);
+	echo "<br><br>";
+
+
 ?>
