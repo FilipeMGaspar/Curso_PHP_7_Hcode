@@ -60,7 +60,7 @@
 
 	//Spaceship Operator
 	echo "<h2>Spaceship Operator</h2>";
-	$a = 35;
-	$b = 35;
+	$a = 25;
+	$b = 60;
 	var_dump($a <=> $b);
 ?>
