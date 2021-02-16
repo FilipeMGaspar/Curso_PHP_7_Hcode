@@ -63,13 +63,13 @@
 	$a = 25;
 	$b = 60;
 	var_dump($a <=> $b);
-	echo "<br>"
+	echo "<br>";
 
-	//
-	echo "<h2></h2>";
+	//Operador Not Null
+	echo "<h2>Operador Not Null</h2>";
 
 	$a = NULL;
-	$b = NULL;
+	$b = 11;
 	$c = 5;
 
 	echo $a ?? $b ?? $c;
