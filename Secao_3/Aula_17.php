@@ -73,4 +73,11 @@
 	$c = 5;
 
 	echo $a ?? $b ?? $c;
+
+	//Operadores de incremento e decremento;
+	echo "<h2>Operador de Incremento e Decremento</h2>";
+	$a = 10;
+
+	echo $a++;
+	echo "<br>".$a;
 ?>
