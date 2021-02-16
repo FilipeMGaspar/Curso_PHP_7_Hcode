@@ -40,4 +40,15 @@
 	echo "<br>Resto da divisão = " . ($a % $b);
 
 	echo "<br>Exponenciação = " . $a ** $b;
+
+	//operadores relacionais
+	echo "<h2>Operadores Relacionais</h2>";
+	$a = 30;
+	$b = 55;
+
+	var_dump($a > $b);
+	echo "<br>";
+	var_dump($a < $b);
+	echo "<br>";
+	var_dump($a = $b);
 ?>
