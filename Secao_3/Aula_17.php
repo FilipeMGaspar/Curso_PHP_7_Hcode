@@ -43,12 +43,13 @@
 
 	//operadores relacionais
 	echo "<h2>Operadores Relacionais</h2>";
-	$a = 30;
+	$a = "55";
 	$b = 55;
 
 	var_dump($a > $b);
 	echo "<br>";
 	var_dump($a < $b);
 	echo "<br>";
-	var_dump($a = $b);
+	var_dump($a == $b);
+	echo "br";
 ?>
