@@ -63,4 +63,14 @@
 	$a = 25;
 	$b = 60;
 	var_dump($a <=> $b);
+	echo "<br>"
+
+	//
+	echo "<h2></h2>";
+
+	$a = NULL;
+	$b = NULL;
+	$c = 5;
+
+	echo $a ?? $b ?? $c;
 ?>
