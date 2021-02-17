@@ -20,7 +20,13 @@ echo strtolower($nome);
 
 $nome2 = "manuel marques";
 echo "<br>" . $nome2 . " ";
-echo " ". ucfirst($nome2);
+echo " ". ucfirst($nome2). " ";
 echo ucwords($nome2);
+
+$empresa = "Hcode";
+
+$empresa = str_replace("o", "0", $empresa);
+echo "<br>". $empresa;
+$empresa = str_replace("e", "3", $empresa);
 
 ?>
