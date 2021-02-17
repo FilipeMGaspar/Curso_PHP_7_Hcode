@@ -30,8 +30,13 @@ echo "<br>". $empresa;
 $empresa = str_replace("e", "3", $empresa);
 echo "<br>" . $empresa;
 
+
 $frase = "A repetição é a mãe da retenção.";
 $q = strpos($frase, "mãe");
-
+echo "<br><br>";
 var_dump($q);
+
+$texto = substr($frase, 0, $q);
+echo "<br>" . $texto;
+
 ?>
