@@ -38,8 +38,10 @@ echo "<br><br>";
 var_dump($q);
 
 $texto = substr($frase, 0, $q);
-echo "<br>" . $texto;
+echo "<br>" . $texto." <br>";
+var_dump($texto);
 
 $texto2 = substr($frase, $q+ strlen($palavra), strlen($frase));
-echo "<br>" . $texto2;
+echo "<br>" . $texto2. " <br>";
+var_dump($texto2);
 ?>
