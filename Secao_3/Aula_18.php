@@ -28,5 +28,10 @@ $empresa = "Hcode";
 $empresa = str_replace("o", "0", $empresa);
 echo "<br>". $empresa;
 $empresa = str_replace("e", "3", $empresa);
+echo "<br>" . $empresa;
 
+$frase = "A repetição é a mãe da retenção.";
+$q = strpos($frase, "mãe");
+
+var_dump($q);
 ?>
