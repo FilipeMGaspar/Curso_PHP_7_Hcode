@@ -18,4 +18,9 @@ $nome = "UDEMY";
 echo "<br>".$nome." ";
 echo strtolower($nome);
 
+$nome2 = "manuel marques";
+echo "<br>" . $nome2 . " ";
+echo " ". ucfirst($nome2);
+echo ucwords($nome2);
+
 ?>
