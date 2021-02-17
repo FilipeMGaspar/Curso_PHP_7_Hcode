@@ -9,7 +9,13 @@ echo "<br><br>ABC $nome";
 
 echo '<br><br>$nome2';
 
-$texto = "joão rangel";
 
-echo $texto;
+$texto = "joao rangel";
+echo "<br>".$texto." ";
+echo strtoupper($texto);
+
+$nome = "UDEMY";
+echo "<br>".$nome." ";
+echo strtolower($nome);
+
 ?>
