@@ -32,11 +32,14 @@ echo "<br>" . $empresa;
 
 
 $frase = "A repetição é a mãe da retenção.";
-$q = strpos($frase, "mãe");
+$palavra = "mãe";
+$q = strpos($frase, $palavra);
 echo "<br><br>";
 var_dump($q);
 
 $texto = substr($frase, 0, $q);
 echo "<br>" . $texto;
 
+$texto2 = substr($frase, $q+ strlen($palavra), strlen($frase));
+echo "<br>" . $texto2;
 ?>
