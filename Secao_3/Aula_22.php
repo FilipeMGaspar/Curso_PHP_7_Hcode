@@ -10,7 +10,7 @@ for ($i = 0; $i<=100; $i+=5) {
 echo " Fim!<br><br>";
 
 
-for ($i = date("Y"); $i > date("Y") - 100 ; $i-- ) { 
+for ($i = date("Y"); $i >= date("Y") - 100 ; $i-- ) { 
 	echo $i."  <=>  ";
 }
 echo " Fim!";
