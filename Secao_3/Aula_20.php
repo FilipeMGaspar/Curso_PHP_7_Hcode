@@ -1,5 +1,5 @@
 <?php
-	$qualAsuaIdade = 11;
+	$qualAsuaIdade = 15;
 	
 	$idadeCrianca = 12;
 	$idadeMaior = 18;
@@ -7,7 +7,11 @@
 
 	if($qualAsuaIdade < $idadeCrianca){
 		echo "Criança";
-	}else {
-		echo "Não é criança";
+	}else if($qualAsuaIdade < $idadeMaior){
+		echo "Adolecente";
+	}else if($qualAsuaIdade < $idadeMelhor){
+		echo "Adulto";
+	}else{
+		echo "Idoso";
 	}
 ?>
