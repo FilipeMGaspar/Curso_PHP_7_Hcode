@@ -16,9 +16,12 @@ for ($i=0; $i < 10 ; $i--) {
 	echo $i ."  ";
 }
 */
+echo "Ano atual -> ".date("Y");
 
-for ($i = date("Y"); $i  < date("Y") - 100 ; $i--) { 
-	echo $i." -> ";
+$anoAtual = date("Y");
+
+for ($i = $anoAtual; $i > $anoAtual - 100; $i--) {
+	echo $i. "  ";
 }
 
 ?>
