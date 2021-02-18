@@ -11,7 +11,7 @@ echo " Fim!<br><br>";
 
 
 for ($i = date("Y"); $i > date("Y") - 100 ; $i-- ) { 
-	echo $i."   ";
+	echo $i."  <=>  ";
 }
 echo " Fim!";
 /*
