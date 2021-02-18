@@ -10,8 +10,12 @@ for ($i = 0; $i<=100; $i+=5) {
 echo " Fim!<br>";
 
 
+/*
 //Não fazer ou derruba o servidor
 for ($i=0; $i < 10 ; $i--) { 
-	echo $i;
+	echo $i ."  ";
 }
+*/
+
+
 ?>
