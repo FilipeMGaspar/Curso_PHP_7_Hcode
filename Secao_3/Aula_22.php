@@ -1,5 +1,5 @@
 <?php
-for ($i = 0; $i<=10; $i++) {
+for ($i = 0; $i<=100; $i+=5) {
 	echo $i." ";
 }
 echo " - Fim!";
