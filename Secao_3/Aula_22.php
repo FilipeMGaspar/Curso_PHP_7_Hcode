@@ -17,7 +17,8 @@ for ($i=0; $i < 10 ; $i--) {
 }
 */
 
-for ($i = date(Y); $i  < date(Y) - 100 ; $i--) { 
+for ($i = date("Y"); $i  < date("Y") - 100 ; $i--) { 
 	echo $i." -> ";
 }
+
 ?>
