@@ -9,11 +9,11 @@ for ($i = 0; $i<=100; $i+=5) {
 }
 echo " Fim!<br><br>";
 
-
+echo "<select>";
 for ($i = date("Y"); $i >= date("Y") - 100 ; $i-- ) { 
-	echo $i."  <=>  ";
+	echo '<option value="'. $i . '">'. $i .'</option>';
 }
-echo " Fim!";
+echo "</select>";
 /*
 //Não fazer ou derruba o servidor
 for ($i=0; $i < 10 ; $i--) { 
