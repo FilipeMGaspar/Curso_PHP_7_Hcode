@@ -1,5 +1,5 @@
 <?php
-	$qualAsuaIdade = 15;
+	$qualAsuaIdade = 25;
 	
 	$idadeCrianca = 12;
 	$idadeMaior = 18;
