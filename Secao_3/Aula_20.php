@@ -14,4 +14,8 @@
 	}else{
 		echo "Idoso";
 	}
+
+	//Operador ternário
+	echo "<br>";
+	echo ($qualAsuaIdade < $idadeMaior) ? "Menor de Idade" : "Maior de Idade";
 ?>
