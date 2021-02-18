@@ -7,5 +7,7 @@
 
 	if($qualAsuaIdade < $idadeCrianca){
 		echo "Criança";
+	}else {
+		echo "Não é criança";
 	}
 ?>
