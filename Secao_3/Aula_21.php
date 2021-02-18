@@ -1,7 +1,7 @@
 <?php
-$diaDaSemana = date('w');
+$diaDaSemana = 8;//date('w');
 
-echo $diaDaSemana."<br>";
+echo $diaDaSemana." ";
 
 switch ($diaDaSemana) {
 	case 0:
@@ -24,6 +24,9 @@ switch ($diaDaSemana) {
 		break;
 	case 6:
 		echo "Sábado";
+		break;	
+	default :
+		echo "Dia inválido";
 		break;			
 }
 
