@@ -7,4 +7,8 @@
 	foreach ($meses as $mes) {
 		echo "O mês de: ".$mes."<br>";
 	}
+
+	foreach ($meses as $index => $mes) {
+		echo $index." º mês ". $mes."<br><br>";
+	}
 ?>
