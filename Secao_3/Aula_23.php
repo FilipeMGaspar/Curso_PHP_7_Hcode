@@ -10,6 +10,6 @@
 
 	echo "<br>";
 	foreach ($meses as $index => $mes) {
-		echo $index." º mês ". $mes."<br><br>";
+		echo ($index + 1)." º mês ". $mes."<br>";
 	}
 ?>
