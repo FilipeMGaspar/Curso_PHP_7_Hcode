@@ -2,15 +2,15 @@
 	<input type="texto" name="nome">
 	<input type="date" name="nascimento">
 	<input type="submit" value="OK">
-</form>>
+</form>
 
 <?php
 	
 	if(isset($_GET)){
 		foreach ($_GET as $key => $value) {
-			echo "Nome do Campo ". $key;
+			echo "Nome do Campo ". $key."<br>";
 
-			echo "Valor do campo ". $value;
+			echo "Valor do campo ". $value."<br>";
 
 			echo "<hr>";
 		}
