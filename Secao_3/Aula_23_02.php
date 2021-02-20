@@ -8,9 +8,9 @@
 	
 	if(isset($_GET)){
 		foreach ($_GET as $key => $value) {
-			echo "Nome do Campo ". $key."<br>";
+			echo "Nome do Campo: ". $key." ";
 
-			echo "Valor do campo ". $value."<br>";
+			echo "Valor do campo: ". $value." ";
 
 			echo "<hr>";
 		}
