@@ -14,4 +14,6 @@
 	$carros[1][3] = "Eco Sport";
 
 	echo "<br>". $carros[0][0]." ".$carros[0][3];
+
+	echo "<br>".end($carros[1]);
 ?>
