@@ -15,7 +15,7 @@
 
 	echo "<br>Não Funcionam";
 	echo "<br>";	
-	echo PHP_VERSION();
+	echo PHP_VERSION;
 
 	echo "<br>";
 	echo DIRECTORY_SEPARATOR;
