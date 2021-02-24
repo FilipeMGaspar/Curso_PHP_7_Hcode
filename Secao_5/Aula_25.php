@@ -16,4 +16,19 @@
 	echo "<br>". $carros[0][0]." ".$carros[0][3];
 
 	echo "<br>".end($carros[1]);
+
+	$pessoas = array();
+
+	array_push($pessoas, array(
+		'nome' => 'João',
+		'idade' => 29 
+	));
+
+	array_push($pessoas, array(
+		'nome' => 'Glaucio',
+		'idade' => 25 
+	));
+
+	echo "<br>";
+	print_r($pessoas);
 ?>
