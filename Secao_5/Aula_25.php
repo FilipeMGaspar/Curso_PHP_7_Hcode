@@ -31,4 +31,7 @@
 
 	echo "<br>";
 	print_r($pessoas);
+
+	echo "<br>";
+	echo $pessoas[0]['nome'];
 ?>
