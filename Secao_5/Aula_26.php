@@ -1,4 +1,5 @@
 <?php
+	
 	$pessoas = array();
 
 	array_push($pessoas ,array(
@@ -11,5 +12,6 @@
 		'idade' => 25
 	));
 
-	print_r($pessoas[0]['Nome']);
+	echo "<br> json_encode<br>";
+	echo json_encode($pessoas);
 ?>
