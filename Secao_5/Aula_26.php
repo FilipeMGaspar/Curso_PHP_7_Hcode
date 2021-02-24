@@ -14,4 +14,11 @@
 
 	echo "<br> json_encode<br>";
 	echo json_encode($pessoas);
+	echo "<br>";
+	$json = '[{"nome":"Jo\u00e3o","idade":29},{"nome":"Glaucio","idade":25}]';
+
+	$data = json_decode($json, true);
+	echo "<br>";
+	var_dump($data);
+	
 ?>
