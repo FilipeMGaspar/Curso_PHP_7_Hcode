@@ -16,9 +16,5 @@
 		case PHP_SESSION_ACTIVE:
 			echo "Sessão Activa, seja bem vindo";
 			break;
-		
-		default:
-			# code...
-			break;
 	}
 ?>
