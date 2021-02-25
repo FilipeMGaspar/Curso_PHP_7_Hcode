@@ -1,14 +1,9 @@
 <?php
 	function ola(){
-		$argumentos = func_get_arg();
-		//var_dump($argumentos);
+		$argumentos = func_get_args();
 		return $argumentos;
 	}
 
-	echo "<br><br>";
-	var_dump(ola("teste"));
-	/*
-	echo "<br><br>";
-	var_dump(teste(123));
-	*/
+	var_dump(ola("teste", 10, 25.33));
+
 ?>
