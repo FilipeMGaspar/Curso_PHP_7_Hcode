@@ -7,7 +7,7 @@
 	);
 
 	//&$value passagem por referencia
-	foreach ($pessoa as $value) {
+	foreach ($pessoa as &$value) {
 		if(gettype($value) === 'integer'){
 			$value += 10;
 		}
