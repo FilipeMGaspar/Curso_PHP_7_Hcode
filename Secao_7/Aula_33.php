@@ -14,7 +14,7 @@
 	echo ola("João", "");
 
 	echo "<br><br>";
-	var_dump(teste("Bom dia!"));
+	var_dump(teste("aaaaaa"));
 	echo "<br><br>";
 	var_dump(teste(123));
 ?>
