@@ -1,9 +1,10 @@
 <?php
-	function ola($texto){
+	function ola($texto = 'mundo'){
 		return "Olá $texto!<br>";
 	}
 
-	echo ola("mundo");
+	echo ola();
+	echo ola("");
 	echo ola("Glaucio");
 	echo ola("João");
 ?>
