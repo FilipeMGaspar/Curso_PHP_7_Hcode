@@ -1,7 +1,8 @@
 <?php
 	function ola(){
-		echo "Olá Mundo<br>";
+		echo "Olá Mundo!<br>";
 	}
 
+	ola();
 	ola();
 ?>
