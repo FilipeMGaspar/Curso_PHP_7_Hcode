@@ -3,10 +3,18 @@
 		return "Olá $texto! $periodo!<br>";
 	}
 
+	function teste(){
+		$argumentos = func_get_arg();
+		return $argumentos;
+	}
+	
 	echo ola();
-	echo ola("");
-	echo ola("Glaucio");
-	echo ola("João");
+	echo ola("", "Boa noite");
+	echo ola("Glaucio", "Boa tarde");
+	echo ola("João", "");
 
-
+	echo "<br><br>";
+	var_dump(teste("Bom dia!"));
+	echo "<br><br>";
+	var_dump(teste(123));
 ?>
