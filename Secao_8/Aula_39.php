@@ -1,5 +1,5 @@
 <?php
 	setlocale(LC_ALL, "pt_PT", "pt_PT.utf-8", "portuguese");
 
-	echo strftime("");
+	echo strftime("%A, %B");
 ?>
