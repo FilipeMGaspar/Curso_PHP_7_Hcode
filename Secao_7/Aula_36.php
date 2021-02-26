@@ -26,8 +26,10 @@
 						array(
 							'nome_cargo' =>'Gerente de Contas a pagar',
 							'subordinados' => array(
-								//Inicio: supervisor de pagamentos
-									'nome_cargo' => 'supervisor de pagamentos'
+									array(
+										//Inicio: supervisor de pagamentos
+										'nome_cargo' =>'Supervisor de Pagamentos'
+									)
 								)
 						),
 						//Fim: Gerente de Contas a pagar
@@ -38,7 +40,7 @@
 							'subordinados' => array(
 								//Inicio: supervisor de Suprimentos
 									array(
-										'nome_cargo' =>'supervisor de Suprimentos'
+										'nome_cargo' =>'Supervisor de Suprimentos'
 									)
 									//fim: supervisor de Suprimentos
 								)
