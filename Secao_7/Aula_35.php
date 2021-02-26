@@ -3,7 +3,7 @@
   	return array_sum($valores);
   }
 
-	function subtrair(int ...$valores):string{
+	function subtrair(int ...$valores):float{
   		return array_sum($valores);
 	}
 
@@ -14,5 +14,5 @@
   echo soma(1.5, 2.3);
   echo "<br>";
 
-  var_dump(subtrair(6, 5));
+  var_dump(subtrair(2.5, 5.3));
 ?>
