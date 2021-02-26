@@ -60,7 +60,7 @@
 					$html .= $cargo['nome_cargo'];
 					
 					if(isset($cargo['subordinados']) && count($cargo['subordinados']) > 0){
-						$html .= exibe();
+						$html .= exibe($cargo['subordinados']);
 					}
 
 					$html .= "</li>";
