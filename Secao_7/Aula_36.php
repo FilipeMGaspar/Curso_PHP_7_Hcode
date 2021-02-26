@@ -40,7 +40,7 @@
 							'subordinados' => array(
 								//Inicio: supervisor de Suprimentos
 									array(
-										'nome_cargo' =>'Supervisor de Suprimentos'
+										'nome_cargo' =>'Supervisor de Suprimentos',
 										'subordinados'=> array(
 											array(
 												'nome_cargo' => 'Funcionario'
