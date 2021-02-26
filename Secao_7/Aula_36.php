@@ -29,7 +29,7 @@
 								//Inicio: supervisor de pagamentos
 									'nome_cargo' => 'supervisor de pagamentos'
 								)
-						)
+						),
 						//Fim: Gerente de Contas a pagar
 
 						//Inicio: Gerente de compras
