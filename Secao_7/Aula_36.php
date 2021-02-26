@@ -51,4 +51,19 @@
 			)
 		)
 	);
+
+	function exibe($cargos){
+		$html = "<ul>";
+			
+			foreach ($cargos as $cargo) {
+					
+			}
+
+		$html .= "</ul>";
+
+		return $html;
+	}
+
+	echo exibe($hiarquia);
+
 ?>
