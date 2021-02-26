@@ -22,6 +22,12 @@
 					'nome_cargo' =>'Dirictor Financeiro',
 					'subordinados' => array(
 						
+						//Inicio: Gerente de Contas a pagar
+						array(
+							'nome_cargo' =>'Gerente de Contas a pagar',
+							'subordinados' =>
+						)
+						//Fim: Gerente de Contas a pagar
 					)
 				)
 				//Fim: Dirictor Financeiro
