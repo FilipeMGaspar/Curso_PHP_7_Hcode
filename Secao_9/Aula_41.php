@@ -13,4 +13,8 @@
 	//Como estou
 		//Sempre no momento
 
+//Uma classe é um conjunto de atributos e métodos
+
+
+
 ?>	
