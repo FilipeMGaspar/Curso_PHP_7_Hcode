@@ -14,6 +14,20 @@
 		}
 
 		//get e set do $motor
-		
+		public function getMotor(){
+			return $this->motor;
+		}
+		public function setMotor($motor){
+			$this->motor = $motor;
+		}
+
+		//get e set de $ano
+		public function getAno(){
+			return $this->ano;
+		}
+		public function setAno($ano){
+			$this->ano = $ano;
+		}
+
 	}
 ?>
