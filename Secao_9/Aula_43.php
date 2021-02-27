@@ -53,6 +53,8 @@
 	echo "<br>";
 	var_dump($gol->getAno());
 	echo "<br><br>Função exibir <br><br>";
+	print_r($gol->exibir());
+	echo "<br><br>";
 	var_dump($gol->exibir());
 	
 ?>
