@@ -46,7 +46,9 @@
 	$gol->setMotor("1.6");
 	$gol->setAno("2017");
 
-	//echo "Tudo ok até aki";
+
 	var_dump($gol->getModelo());
-	print_r($gol->exibir());
+	var_dump($gol->getMotor());
+	var_dump($gol->getAno());
+	
 ?>
