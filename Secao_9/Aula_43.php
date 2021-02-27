@@ -38,4 +38,9 @@
 			);
 		}
 	}
+
+
+	$gol = new Carro();
+	//$gol->modelo="Gol Gt"; //Não vai funcionar poir o atributo é privado
+	$gol->setModelo("Gol GT");
 ?>
