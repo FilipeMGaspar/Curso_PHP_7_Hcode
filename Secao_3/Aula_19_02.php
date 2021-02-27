@@ -4,6 +4,6 @@
 	require_once "Aula_19.php";
 	require_once "Aula_19.php";
 	
-	$resultado = somar(10, 20);
+	$resultado = somar(10, 21);
 	echo "Resultado = ".$resultado;
 ?>
