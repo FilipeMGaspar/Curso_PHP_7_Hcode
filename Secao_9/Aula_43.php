@@ -32,9 +32,9 @@
 		//Função para exebir todas as informações do carro / Class Carro
 		public function exibir(){
 			return array(
-				'modelo'=>$this->getModelo,
-				'motor'=>$this->getMotor,
-				'ano'=>$this->getAno
+				'modelo'=>$this->getModelo(),
+				'motor'=>$this->getMotor(),
+				'ano'=>$this->getAno()
 			);
 		}
 	}
