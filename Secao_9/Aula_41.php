@@ -7,16 +7,17 @@
 
 	//O que faço
 		//Métodos
-			//Ligar
-			//Desligar
+			//Aceder
+			//Gravar
+			//Sair
 
 	//Como estou
 		//Sempre no momento
 
-//Uma classe é um conjunto de atributos e métodos
+	//Uma classe é um conjunto de atributos e métodos
 
-//Intancia é uma utilização de uma classe
+	//Intancia é uma utilização de uma classe
 
-//O objecto é uma variavel que representa uma classe
+	//O objecto é uma variavel que representa uma classe - Chama-se instancia
 
 ?>	
