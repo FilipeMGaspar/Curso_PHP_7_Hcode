@@ -43,4 +43,6 @@
 	$gol = new Carro();
 	//$gol->modelo="Gol Gt"; //Não vai funcionar poir o atributo é privado
 	$gol->setModelo("Gol GT");
+	$gol->setMotor("1.6");
+	$gol->setAno("2017");
 ?>
