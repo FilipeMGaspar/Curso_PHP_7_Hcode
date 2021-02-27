@@ -14,7 +14,7 @@
 		}
 
 		//get e set do $motor
-		public function getMotor(){
+		public function getMotor():float{
 			return $this->motor;
 		}
 		public function setMotor($motor){
@@ -22,7 +22,7 @@
 		}
 
 		//get e set de $ano
-		public function getAno(){
+		public function getAno():int{
 			return $this->ano;
 		}
 		public function setAno($ano){
@@ -32,9 +32,9 @@
 		//Função para exebir todas as informações do carro / Class Carro
 		public function exibir(){
 			return array(
-				"modelo"=>$this->getModelo(),
-				"motor"=>$this->getMotor(),
-				"ano"=>$this.getAno()
+				'modelo'=>$this->getModelo(),
+				'motor'=>$this->getMotor(),
+				'ano'=>$this.getAno()
 			);
 		}
 	}
@@ -46,6 +46,7 @@
 	$gol->setMotor("1.6");
 	$gol->setAno("2017");
 
-	echo "Tudo ok até aki";
-	//print_r($gol->exibir());
+	//echo "Tudo ok até aki";
+	var_dump($gol->getModelo());
+	print_r($gol->exibir());
 ?>
