@@ -10,4 +10,7 @@
 			echo $this->senha."<br>";
 		}
 	}
+
+	$objecto = new Pessoa();
+	echo $objecto->nome."<br>";
 ?>
