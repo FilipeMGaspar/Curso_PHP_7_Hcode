@@ -19,7 +19,11 @@ ini_set("display_errors", 1);
 	}
 
 	class Programador extends Pessoa {
+		
 		public function verDados(){
+			
+			echo get_class($this)."<br><br>";
+
 			echo $this->nome . "<br>";
 			echo $this->idade."<br>";
 			echo $this->senha."<br>";
