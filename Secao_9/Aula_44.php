@@ -69,11 +69,13 @@ ini_set("display_errors", 1);
 		}
 	}	
 
+	var_dump(Documento::validarCPF("40216777631"))
+	/*
 	$cpf = new Documento();
 	$cpf->setNumero("40216777631");
 
 	var_dump($cpf->getNumero());
-	
+	*/
 
 	//phpinfo();
 ?>
