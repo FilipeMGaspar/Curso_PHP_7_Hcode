@@ -13,11 +13,18 @@
 		public function __destruct(){
 			var_dump("Destruir");
 		}
+
+		public function __toString(){
+			return $this->logradouro.", ".$this->numero." - ".$this->cidade;
+		}
 	}
 
 	$meuEndereco = new Endereco("Rua dos Tontos", "123", "Tolinhos");
 
 	var_dump($meuEndereco);
 
+
+
+	echo "<br><br>";
 	unset($meuEndereco);
 ?>
