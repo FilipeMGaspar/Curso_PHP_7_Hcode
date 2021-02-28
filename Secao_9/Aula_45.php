@@ -23,7 +23,7 @@
 
 	var_dump($meuEndereco);
 
-
+	echo "<br><br>".$meuEndereco;
 
 	echo "<br><br>";
 	unset($meuEndereco);
