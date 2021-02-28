@@ -6,6 +6,7 @@
 			return $this->numero;
 		}
 		public function setNumero($numero){
+			$resultado = Documento::validar($numero);//Chamada do método estático 
 			$this->numero = $numero; 
 		}
 
@@ -39,20 +40,20 @@
 
      		} else {   
          
-        	for ($t = 9; $t < 11; $t++) {
+        		for ($t = 9; $t < 11; $t++) {
              
-            for ($d = 0, $c = 0; $c < $t; $c++) {
-                $d += $cpf{$c} * (($t + 1) - $c);
-            }
-            $d = ((10 * $d) % 11) % 10;
-            if ($cpf{$c} != $d) {
-                return false;
-            }
-        	}
+            		for ($d = 0, $c = 0; $c < $t; $c++) {
+                		$d += $cpf{$c} * (($t + 1) - $c);
+           			}
+            	
+            		$d = ((10 * $d) % 11) % 10;
+            		if ($cpf{$c} != $d) {
+                		return false;
+            		}
+        		}
  
-        	return true;
-    	}
-
+        		return true;
+    		}
 		}
 	}	
 
