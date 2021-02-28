@@ -1,4 +1,11 @@
 <?php
+
+/* Informa o nível dos erros que serão exibidos */
+error_reporting(E_ALL);
+ 
+/* Habilita a exibição de erros */
+ini_set("display_errors", 1);
+
 	class Documento {
 		private $numero;
 
@@ -6,12 +13,17 @@
 			return $this->numero;
 		}
 		public function setNumero($numero){
-			$resultado = Documento::validar($numero);//Chamada do método estático 
+			
+			$resultado = Documento::validarCPF($numero);//Chamada do método estático 
+			if($resultado === false){
+				throw new Exception("CPF informado não é válido", 1);
+				
+			}
 			$this->numero = $numero; 
 		}
 
 		//Função para validar o CPF
-		public static function validar($cpf):bool{
+		public static function validarCPF($cpf):bool{
 			if(empty($cpf)) {
        			return false;
    			}
@@ -58,7 +70,10 @@
 	}	
 
 	$cpf = new Documento();
-	$cpf->setNumero("32165498712");
+	$cpf->setNumero("40216777631");
 
 	var_dump($cpf->getNumero());
+	
+
+	//phpinfo();
 ?>
