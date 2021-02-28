@@ -15,11 +15,11 @@
 		}
 
 		public function __toString(){
-			return $this->logradouro.", ".$this->numero." - ".$this->cidade;
+			return $this->logradouro.", Nº".$this->numero." - ".$this->cidade;
 		}
 	}
 
-	$meuEndereco = new Endereco("Rua dos Tontos", "123", "Tolinhos");
+	$meuEndereco = new Endereco("Rua dos Tontos.", "123", "Seus Tontinhos");
 
 	var_dump($meuEndereco);
 
