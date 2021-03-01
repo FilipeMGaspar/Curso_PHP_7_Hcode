@@ -25,5 +25,15 @@ ini_set("display_errors", 1);
 		}
 	}
 
-	
+	class DelRay extends Automovel {
+		public function empurrar(){
+			echo "Está a empurrar muito DEVAGAR!!!";
+		}
+	}
+
+	$carro = new DelRay();
+	//$carro = new Automovel();
+	echo $carro->acelerar(200);
+	echo "<br><br>";
+	echo $carro->empurrar();
 ?>
