@@ -24,15 +24,30 @@
 		}
 	}
 
+	class Passoro extends Animal{
+		public function falar(){
+			return "Chilgirar: piu piu piu";
+		}
+		public function mover(){
+			return "Voa e " . parent::mover();//Chama o método mover da class Animal
+		}
+	}
 
+	echo "<hr>";
+	echo "..: Cão :.. <br>";
 	$pluto = new Cachorro();
 	echo $pluto->falar()."<br>";
 	echo $pluto->mover()."<br>";
 
+	echo "<hr>";
+	echo "**** Gato ****<br>";
 	$garfield = new Gato();
-	echo "<br>";
 	echo $garfield->falar()."<br>";
 	echo $garfield->mover()."<br>";
 
-	
+	echo "<hr>";
+	echo "~~~ Passaro ~~~<br>";
+	$ave = new Passoro();
+	echo $ave->falar()."<br>";
+	echo $ave->mover()."<br>";
 ?>
