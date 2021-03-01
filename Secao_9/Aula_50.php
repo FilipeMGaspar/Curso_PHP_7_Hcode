@@ -12,6 +12,11 @@
 		}
 	}
 
+	class Cachorro extends Animal{
+		public function falar(){
+			return "Ladra: ão ão ão";
+		}
+	}
 
 
 ?>
