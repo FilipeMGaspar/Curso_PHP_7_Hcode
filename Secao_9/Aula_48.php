@@ -13,7 +13,9 @@ ini_set("display_errors", 1);
 	}
 
 	class Civic implements Veiculo {
-
+		public function acelerar($velocidade){
+			echo "O Veiculo acelerou até: ".$velocidade." Km/h";
+		}
 	}
 
 	$carro = new Civic();
