@@ -20,8 +20,11 @@ ini_set("display_errors", 1);
 			echo "O veículo travou até: " . $velocidade." Km/h";
 		}
 
-		
+		public function trocarMarcha($marcha){
+			echo "O Veiculo engatou a marcha: ".$marcha;
+		}
 	}
 
 	$carro = new Civic();
+	$carro->trocarMarcha(1);
 ?>
