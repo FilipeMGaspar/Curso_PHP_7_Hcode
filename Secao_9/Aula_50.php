@@ -18,7 +18,21 @@
 		}
 	}
 
+	class Gato extends Animal{
+		public function falar(){
+			return "Mia: Miau miau miau!";
+		}
+	}
+
 
 	$pluto = new Cachorro();
-	echo $pluto->falar();
+	echo $pluto->falar()."<br>";
+	echo $pluto->mover()."<br>";
+
+	$garfield = new Gato();
+	echo "<br>";
+	echo $garfield->falar()."<br>";
+	echo $garfield->mover()."<br>";
+
+	
 ?>
