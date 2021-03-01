@@ -14,5 +14,5 @@
 	}
 
 	$fala = new Testar();
-	echo $fala->falar("Estou a falar! Estejam atentos");
+	echo $fala->falar("Estou a falar! <h2>Estejam atentos!</h2>");
 ?>
