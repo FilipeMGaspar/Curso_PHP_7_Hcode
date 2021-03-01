@@ -19,4 +19,6 @@
 	}
 
 
+	$pluto = new Cachorro();
+	echo $pluto->falar();
 ?>
