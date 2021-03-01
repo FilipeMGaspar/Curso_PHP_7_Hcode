@@ -9,13 +9,18 @@ ini_set("display_errors", 1);
 
 		public function acelerar($velocidade);
 		public function travar($velocidade);
-		public function TrocarMarcha($marcha);
+		public function trocarMarcha($marcha);
 	}
 
 	class Civic implements Veiculo {
 		public function acelerar($velocidade){
 			echo "O Veiculo acelerou até: ".$velocidade." Km/h";
 		}
+		public function travar($velocidade){
+			echo "O veículo travou até: " . $velocidade." Km/h";
+		}
+
+		
 	}
 
 	$carro = new Civic();
