@@ -6,6 +6,12 @@
 		public function Falar(){
 			return "Som";
 		}
+
+		public function mover(){
+			return "Anda";
+		}
 	}
+
+
 
 ?>
