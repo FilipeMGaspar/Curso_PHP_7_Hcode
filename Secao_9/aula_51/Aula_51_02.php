@@ -7,9 +7,8 @@
 		}
 	}
 
-	spl_autoload_register("incluirClasses"){
-
-	}
+	spl_autoload_register("incluirClasses");
+	
 	/*function __autoload($nomeClass){
 		require_once "$nomeClass.php";
 		var_dump($nomeClass);
