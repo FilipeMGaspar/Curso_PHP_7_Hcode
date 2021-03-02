@@ -1,4 +1,10 @@
 <?php
+	interface Veiculo {
+		public function acelerar($velocidade);
+		public function travar($velocidade);
+		public function trocarMarcha($marcha);
+	}
+
 	abstract class Automovel implements Veiculo {
 		
 		public function acelerar($velocidade){
@@ -10,7 +16,7 @@
 		}	
 
 		public function trocarMarcha($trocarMarcha){
-			echo "O veiculo engatou a " . $marcha . " mudança";
+			echo "O veiculo engatou a " . $marcha . " ";
 		}
 
 	}
