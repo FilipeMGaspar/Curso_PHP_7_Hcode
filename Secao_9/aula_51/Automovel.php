@@ -16,7 +16,7 @@
 		}	
 
 		public function trocarMarcha($trocarMarcha){
-			echo "O veiculo engatou a " . $marcha . " ";
+			echo "O veiculo engatou a " . $trocarMarcha . " ";
 		}
 
 	}
