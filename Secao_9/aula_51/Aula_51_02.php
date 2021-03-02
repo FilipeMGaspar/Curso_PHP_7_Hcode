@@ -2,7 +2,7 @@
 	require_once "../../mostraerros.php";
 
 	function incluirClasses($nomeClasse){
-		if(file_exists($nomeClasse."php")){
+		if(file_exists($nomeClasse."php") === true){
 			require_once ($nomeClasse."php");
 		}
 	}
