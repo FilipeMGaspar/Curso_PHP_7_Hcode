@@ -2,7 +2,9 @@
 	require_once "../../mostraerros.php";
 
 	function incluirClasses($nomeClasse){
-		require_once ($nomeClasse."");
+		if(file_exists($nomeClasse."php")){
+			require_once ($nomeClasse."php");
+		}
 	}
 
 	spl_autoload_register(""){
