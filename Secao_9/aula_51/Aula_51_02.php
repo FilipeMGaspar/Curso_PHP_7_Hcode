@@ -4,6 +4,12 @@
 	function incluirClasses($nomeClasse){
 
 		var_dump($nomeClasse);
+		if (file_exists($nomeClasse."php") == true ) {
+			echo "<br><br>!!! AKI !!!!";
+		}else{
+			echo "<br><br> Não encontrou o ficheiro!<br>";
+		}
+
 		/*if(file_exists($nomeClasse."php") === true){
 			require_once ($nomeClasse."php");
 		}*/
@@ -19,7 +25,7 @@
 		}
 	});*/
 
-	//$carro = new DelRay();
+	$carro = new DelRay();
 
 	//echo "<br><br>";
 	//$carro->acelerar(80);
