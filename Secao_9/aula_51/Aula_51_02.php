@@ -23,4 +23,6 @@
 	$carro->travar(90);
 	echo "<br>";
 	$carro->trocarMarcha(5);
+	echo "<br><br>";
+	$carro->empurrar();
 ?>
