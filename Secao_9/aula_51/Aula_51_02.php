@@ -7,7 +7,7 @@
 		}
 	}
 
-	spl_autoload_register(""){
+	spl_autoload_register("incluirClasses"){
 
 	}
 	/*function __autoload($nomeClass){
