@@ -2,12 +2,16 @@
 	require_once "../../mostraerros.php";
 
 	function incluirClasses($nomeClasse){
-		if(file_exists($nomeClasse."php") === true){
+
+		var_dump($nomeClasse);
+		/*if(file_exists($nomeClasse."php") === true){
 			require_once ($nomeClasse."php");
-		}
+		}*/
+
 	}
 
-	spl_autoload_register("incluirClasses");
+	spl_autoload_register('incluirClasses');
+	//spl_autoload_register("incluirClasses");
 	
 	/*spl_autoload_register($nomeClasse){
 		if (file_exists("abestratas" . DIRECTORY_SEPARATOR . $nomeClasse."php") === true) {
@@ -15,8 +19,8 @@
 		}
 	});*/
 
-	$carro = new DelRay();
+	//$carro = new DelRay();
 
-	echo "<br><br>";
-	$carro->acelerar(80);
+	//echo "<br><br>";
+	//$carro->acelerar(80);
 ?>
