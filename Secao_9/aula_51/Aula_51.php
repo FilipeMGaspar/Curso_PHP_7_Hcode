@@ -3,9 +3,13 @@
 
 	
 	function __autoload($nomeClass){
-		require_once "$nomeClass";
+		require_once "$nomeClass.php";
 		var_dump($nomeClass);
 	}
 
 	$carro = new DelRay();
+
+	echo "<br><br>";
+	$carro->acelerar(80);
+
 ?>
