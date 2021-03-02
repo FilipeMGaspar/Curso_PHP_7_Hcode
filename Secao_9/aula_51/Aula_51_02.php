@@ -8,11 +8,11 @@
 	}
 
 	spl_autoload_register("incluirClasses");
-	
-	/*function __autoload($nomeClass){
-		require_once "$nomeClass.php";
-		var_dump($nomeClass);
-	}*/
+	spl_autoload_register($nomeClasse);
+
+	if (file_exists("abestratas" . DIRECTORY_SEPARATOR . $nomeClasse."php") === true) {
+		require_once ("abestratas" . DIRECTORY_SEPARATOR . $nomeClasse."php");
+	}
 
 	$carro = new DelRay();
 
