@@ -3,7 +3,7 @@
 
 	spl_autoload_register(function($nameClass){
 		$dirClass = "Classe";
-		$fileName ="";
+		$fileName = $dirClass. DIRECTORY_SEPARATOR . $nameClass.".php";
 	});
 
 ?>
