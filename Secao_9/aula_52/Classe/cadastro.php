@@ -26,6 +26,12 @@
 			$this->senha = $senha;
 		}
 
-		
+		public function __toString(){
+			return json_encode(array(
+				'nome'=>$this->getNome(),
+				'email'=>$this->getEmail(),
+				'senha'=>$this->getSenha()
+			));
+		}
 	}
 ?>
