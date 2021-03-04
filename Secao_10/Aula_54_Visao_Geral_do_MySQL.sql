@@ -18,3 +18,5 @@ update tb_usuarios set dessenha = '123456' where idusuario = 1;
 select * from tb_usuarios;
 
 delete from tb_usuarios where idusuario = 1;
+
+truncate table tb_usuarios;
