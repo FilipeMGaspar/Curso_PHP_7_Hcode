@@ -21,6 +21,9 @@
 	
 	$login = "user";
 	$pass = "123456";
-
 	$stmt->execute(); 
+
+	$login = "tester"; 
+	$pass =  "A!1@aM#";	
+	$stmt->execute(); 	
 ?>
