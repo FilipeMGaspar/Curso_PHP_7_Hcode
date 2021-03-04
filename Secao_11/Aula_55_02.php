@@ -13,7 +13,13 @@
 	//pesquisa na Base de dados através do comando select
 	$result = $conect->query("SELECT * FROM tb_usuarios ORDER BY deslogim");
 
+	$data = array();
+
 	while($row = $result->fetch_array(MYSQLI_ASSOC)){
-		var_dump($row);
+
+		array_push($data, $row);
+		//var_dump($row);
 	}
+
+	echo json_encode($data);
 ?>
