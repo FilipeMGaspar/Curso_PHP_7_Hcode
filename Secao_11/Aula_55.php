@@ -1,11 +1,12 @@
 <?php
 	//Incluir o mostrar erros
-	/* Informa o nível dos erros que serão exibidos */
+	require_once "../mostraerros.php";
+	/*// Informa o nível dos erros que serão exibidos 
 		error_reporting(E_ALL);
  
-	/* Habilita a exibição de erros */
+	//Habilita a exibição de erros 
 		ini_set("display_errors", 1);
-
+	*/
 
 	//$conect = new mysqli("localhost", "admin", "123a", "db_php7");
 	$conect = new mysqli("localhost", "admin", "123", "db_php7");
