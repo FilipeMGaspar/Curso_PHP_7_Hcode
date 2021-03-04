@@ -8,4 +8,9 @@
 	$stmt = $conect->prepare("SELECT * FROM tb_usuarios ORDER BY deslogim");
 
 	$stmt->execute();
+
+	$results = $stmt->fetchAll();
+
+	var_dump($results);
+
 ?>
