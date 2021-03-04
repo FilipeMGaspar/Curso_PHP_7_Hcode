@@ -12,11 +12,11 @@
 
 	$stmt = $conect->prepare("insert into tb_usuarios (deslogin, dessenha) values(?, ?)");
 
-	$stmt->bind_param("ss", $login, $pass);
+	$stmt -> bind_param("ss", $login, $pass);
 
-	/*
+	
 	$login = "user";
 	$pass = "123456";
 
-	$stmt->executar(); */
+	$stmt->executar(); 
 ?>
