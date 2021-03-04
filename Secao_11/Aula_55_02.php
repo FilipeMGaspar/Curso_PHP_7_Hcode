@@ -11,5 +11,5 @@
 	}
 
 	//
-
+	$conect->query("SELECT * FROM tb_usuarios ORDER BY deslogim");
 ?>
