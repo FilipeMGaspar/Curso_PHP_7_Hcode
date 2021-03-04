@@ -12,10 +12,12 @@
 	$results = $stmt->fetchAll();
 
 	var_dump($results);
+	
+	echo "<br><br>";
 
 	foreach ($results as $row) {
 		foreach ($row as $key => $value) {
-			echo "<strong>".$key ."</strong>" .$value . "<br>";
+			echo "<strong>  ".$key ." : </strong> " .$value . "<br>";
 		}
 		echo "*******************************<br>";
 	}
