@@ -1,4 +1,7 @@
 <?php
+	//Incluir o mostrar erros
+	require_once "../mostraerros.php" 
+
 	$conect = new mysqli("localhost", "admin", "123", "db_php7");
 	//$conect = new mysqli("localhost", "admin", "123a", "db_php7");
 
@@ -9,8 +12,9 @@
 
 	$stmt = $conect->prepare("insert into tb_usuarios (deslogin, dessenha) values(?, ?)");
 
-	/*$stmt->bind_param("ss", $login, $pass);
+	$stmt->bind_param("ss", $login, $pass);
 
+	/*
 	$login = "user";
 	$pass = "123456";
 
