@@ -10,6 +10,10 @@
 		echo "Erro: " . $conect->connect_error;
 	}
 
-	//
-	$conect->query("SELECT * FROM tb_usuarios ORDER BY deslogim");
+	//pesquisa na Base de dados através do comando select
+	$result = $conect->query("SELECT * FROM tb_usuarios ORDER BY deslogim");
+
+	while($row = $result->fetch_array(MYSQLI_ASSOC)){
+		var_dump($row);
+	}
 ?>
