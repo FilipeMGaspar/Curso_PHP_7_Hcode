@@ -6,3 +6,7 @@ create  table tb_usuarios(
     dessenha varchar(256) not null,
     dtcadastro timestamp not null default current_timestamp()
 );
+
+describe tb_usuarios;
+
+insert into tb_usuarios (deslogim, dessenha) values('root', '!@q%y201!');
