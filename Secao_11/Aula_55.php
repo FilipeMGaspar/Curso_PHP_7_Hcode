@@ -9,5 +9,7 @@
 
 	$stmt = $conect->prepare("insert into tb_usuarios (deslogin, dessenha) values(?, ?)");
 
-	$stmt->bind_param("ss"); 
+	$stmt->bind_param("ss", "user", "123456");
+
+	$stmt->executar(); 
 ?>
