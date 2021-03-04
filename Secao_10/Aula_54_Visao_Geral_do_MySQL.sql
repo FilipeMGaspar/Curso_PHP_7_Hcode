@@ -10,3 +10,5 @@ create  table tb_usuarios(
 describe tb_usuarios;
 
 insert into tb_usuarios (deslogim, dessenha) values('root', '!@q%y201!');
+
+update tb_usuarios set deslogim = '123456' where idusuario = 1;
