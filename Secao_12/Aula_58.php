@@ -3,7 +3,8 @@
 	require_once "../mostraerros.php";
 
 	//coneção ao banco de dados em pdo ao Microsoft SQLSERVER 
-	$conect = new PDO("sqlsrv:Database=db_php7;server=localhost\SQLEXPRESS;ConnectionPooling=0", "sa", "123456");
+	//$conect = new PDO("sqlsrv:Database=db_php7;server=localhost\SQLEXPRESS;ConnectionPooling=0", "sa", "123456");
+	$db = new PDO("sqlsrv:Server=localhost\SQLEXPRESS;Database=db_php7", "sa", "123456");
 
 	
 
