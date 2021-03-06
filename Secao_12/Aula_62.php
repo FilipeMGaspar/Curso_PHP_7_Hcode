@@ -12,4 +12,6 @@
 	$stmt->bindParam(":ID", $id);
 
 	$stmt->execute();
+
+	echo "Dodos eliminados com sucesso!";
 ?>
