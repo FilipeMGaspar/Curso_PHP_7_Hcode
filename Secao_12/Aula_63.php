@@ -13,8 +13,8 @@
 
 	$stmt->execute(array($id));
 
-	$conect->rollback();
-
+	//$conect->rollback();
+	$conect->commit();
+	
 	echo "Dodos eliminados com sucesso!";
-?>
 ?>
