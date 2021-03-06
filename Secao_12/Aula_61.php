@@ -17,4 +17,6 @@
 
 	$stmt->execute();
 
+	echo "Dados alterados com sucesso!";
+
 ?>
