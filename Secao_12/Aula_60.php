@@ -10,5 +10,10 @@
 	$login = "Jose";
 	$passaword = "1234567890";
 
-	$stmt->bindParam();
+	$stmt->bindParam(":LOGIN", $login);
+	$stmt->bindParam(":PASSWORD", $passaword);
+
+	$stmt->execute();
+
+	echo "Dados inseridos com sucesso!";
 ?>
