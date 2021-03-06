@@ -15,4 +15,6 @@
 	$stmt->bindParam(":PASSWORD", $passaword);
 	$stmt->bindParam(":ID", $id);
 
+	$stmt->execute();
+
 ?>
