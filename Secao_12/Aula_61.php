@@ -17,7 +17,7 @@
 
 	$login = "Jose";
 	$passaword = "1234567890";
-	$id = 2;
+	$id = 3;
 
 	$stmt->bindParam(":LOGIN", $login);
 	$stmt->bindParam(":PASSWORD", $passaword);
