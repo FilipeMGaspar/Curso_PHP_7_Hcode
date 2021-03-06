@@ -17,9 +17,9 @@
 
 	$stmt = $conect->prepare("UPDATE tb_usuarios SET deslogim= :LOGIN, dessenha= :PASSWORD WHERE idusuario= :ID");
 
-	$login = "Jose";
-	$passaword = "1234567890";
-	$id = 5;
+	$login = "Maria";
+	$passaword = "Chocolate";
+	$id = 7;
 
 	$stmt->bindParam(":LOGIN", $login);
 	$stmt->bindParam(":PASSWORD", $passaword);
