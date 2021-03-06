@@ -7,7 +7,7 @@
 
 	$stmt = $conect->prepare("DELETE FROM tb_usuarios WHERE idusuario= :ID");
 
-	$id = 1;
+	$id = 2;
 
 	$stmt->bindParam(":ID", $id);
 
