@@ -13,7 +13,7 @@
 	$stmt= $conect->prepare($sql);
 	$stmt->execute([$login, $passaword, $id]);*/
 	
-	$stmt = $conect->prepare("UPDATE tb_usuarios SET deslogim = :LOGIN , desenha= :PASSWORD WHERE idusuario = :ID");
+	$stmt = $conect->prepare("UPDATE tb_usuarios SET deslogim= :LOGIN , desenha= :PASSWORD WHERE idusuario= :ID");
 
 	$login = "Jose";
 	$passaword = "1234567890";
