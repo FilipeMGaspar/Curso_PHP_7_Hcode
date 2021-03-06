@@ -5,4 +5,5 @@
 	//coneção ao banco de dados em pdo
 	$conect = new PDO("mysql:dbname=db_php7;host=localhost", "admin", "123");
 
+	$stmt = $conect->prepare("INSERT INTO tb_usuarios (deslogim, desenha) VALUES ('melfa', ']h2A5!@')");
 ?>
