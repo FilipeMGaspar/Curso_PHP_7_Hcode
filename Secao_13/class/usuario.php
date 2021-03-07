@@ -49,7 +49,7 @@ require_once "../mostraerros.php";
 			));
 
 			if(count($results) > 0) {
-				$row = results[0];
+				$row = $results[0];
 
 				$this->setIdusuario($row['idusuario']);
 				$this->setDeslogim($row['deslogim']);
