@@ -15,18 +15,21 @@ require_once "../mostraerros.php";
 		//Método privado para relacionar os dados recebidos com os valores a serem inseridos na tabela
 		private function setParams($statment, $parameters = array()){
 			foreach ($parameters as $key => $value) {
-				$statment->bindParam($key, $value);
+				$this->setParam->bindParam($key, $value);
 			}
 		}
+
+		
+		//Método privado para receber cada um dos parametros
+		private function setParam($statment, $key, $value{
+			$statment->bindParam($key, $value);
+		}
+
 
 		//Método resposável por preparar as ações a serem efectuadas no banco de dados: INSERT; UPDATE; DELETE; ....
 		public function query($rawQuery, $params = array()){
 
 			$stmt = $this->conn->prepare($RawQuery);
-
-			foreach ($params as $key => $value) {
-				$stmt->bindParam($key, $value);
-			}
 		}
 	}
 ?>
