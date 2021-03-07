@@ -54,7 +54,7 @@ require_once "../../mostraerros.php";
 				$this->setIdusuario($row['idusuario']);
 				$this->setDeslogim($row['deslogim']);
 				$this->setDessenha($row['dessenha']);
-				$this->setDtcadastro($row['dtcadastro']);
+				$this->setDtcadastro(new DateTime(($row['dtcadastro'])));
 			}
 		}
 	}
