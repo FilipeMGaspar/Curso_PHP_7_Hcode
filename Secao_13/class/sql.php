@@ -15,7 +15,7 @@ require_once "../mostraerros.php";
 		//Método privado para relacionar os dados recebidos com os valores a serem inseridos na tabela
 		private function setParams($statment, $parameters = array()){
 			foreach ($parameters as $key => $value) {
-				$this->setParam->bindParam($statment, $key, $value);
+				$this->setParam($statment, $key, $value);
 			}
 		}
 
