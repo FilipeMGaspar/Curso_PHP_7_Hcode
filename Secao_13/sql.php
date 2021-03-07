@@ -6,6 +6,9 @@ require_once "../mostraerros.php";
 	class Sql extends PDO {//sql recebe o prepare bindParam por herança do PDO
 
 		private $conn;
-		
+
+		public function __construct(){
+			$this->conn = new PDO();
+		}
 	}
 ?>
