@@ -35,5 +35,9 @@ require_once "../mostraerros.php";
 
 			return $stmt->execute();
 		}
+
+		public function select($rawQuery, $params = array()){
+			$this->query($rawQuery, $params);
+		}
 	}
 ?>
