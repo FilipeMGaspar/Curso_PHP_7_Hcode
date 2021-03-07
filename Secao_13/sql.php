@@ -38,10 +38,10 @@ require_once "../mostraerros.php";
 			return $stmt;
 		}
 
-		public function select($rawQuery, $params = array()){
+		public function select($rawQuery, $params = array()):array{
 			$stmt = $this->query($rawQuery, $params);
 
-			$stmt->fetchAll(PDO::FETCH_ASSOC);
+			return $stmt->fetchAll(PDO::FETCH_ASSOC);
 		}
 	}
 ?>
