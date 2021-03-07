@@ -29,7 +29,7 @@ require_once "../mostraerros.php";
 		//Método resposável por preparar as ações a serem efectuadas no banco de dados: INSERT; UPDATE; DELETE; ....
 		public function query($rawQuery, $params = array()){
 
-			$stmt = $this->conn->prepare($RawQuery);
+			$stmt = $this->conn->prepare($rawQuery);
 
 			$this->setParams($stmt, $params);
 
