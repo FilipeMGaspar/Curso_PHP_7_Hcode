@@ -10,12 +10,14 @@ require_once "../../mostraerros.php";
 		private $dtcadastro;
 	}
 
+	
 	public function getIdusuario(){
 		return $this->idusuario;
 	}
 	public function setIdusuario($IdUser){
 		$this->idusuario = $IdUser;
 	}
+
 
 	public function getDeslogim(){
 		return $this->deslogim;
@@ -24,12 +26,14 @@ require_once "../../mostraerros.php";
 		$this->deslogim = $login;
 	}
 
+	
 	public function getDessenha(){
 		return $this->dessenha;
 	}
 	public function setDessenha($senha){
 		$this->dessenha = $senha;
 	}
+	
 	
 	public function getDtcadastro(){
 		return $this->dtcadastro;
