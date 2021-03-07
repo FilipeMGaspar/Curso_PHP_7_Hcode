@@ -57,5 +57,14 @@ require_once "../../mostraerros.php";
 				$this->setDtcadastro(new DateTime(($row['dtcadastro'])));
 			}
 		}
+
+		public function __toString(){
+			return json_encode(array(
+				"idusuario"=>$this->getIdusuario(),
+				"deslogim"=>$this->getDeslogim(),
+				"dessenha"=>$this->getDessenha(),
+				"dtcadastro"=>$this->getDtcadastro()->format("d/m/Y H:i:s")
+			));
+		}
 	}
 ?>
