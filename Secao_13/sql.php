@@ -30,6 +30,10 @@ require_once "../mostraerros.php";
 		public function query($rawQuery, $params = array()){
 
 			$stmt = $this->conn->prepare($RawQuery);
+
+			$this->setParams($stmt, $params);
+
+			return $stmt->execute();
 		}
 	}
 ?>
