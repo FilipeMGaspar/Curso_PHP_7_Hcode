@@ -33,11 +33,15 @@ require_once "../mostraerros.php";
 
 			$this->setParams($stmt, $params);
 
-			return $stmt->execute();
+			$stmt->execute();
+
+			return $stmt;
 		}
 
 		public function select($rawQuery, $params = array()){
-			$this->query($rawQuery, $params);
+			$stmt = $this->query($rawQuery, $params);
+
+			$stmt->fetchAll(PDO::FETCH_ASSOC);
 		}
 	}
 ?>
