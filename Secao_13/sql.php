@@ -21,7 +21,7 @@ require_once "../mostraerros.php";
 
 		
 		//Método privado para receber cada um dos parametros
-		private function setParam($statment, $key, $value{
+		private function setParam($statment, $key, $value){
 			$statment->bindParam($key, $value);
 		}
 
