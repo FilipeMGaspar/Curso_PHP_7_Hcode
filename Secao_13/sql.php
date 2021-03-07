@@ -8,7 +8,7 @@ require_once "../mostraerros.php";
 		private $conn;
 
 		public function __construct(){
-			$this->conn = new PDO();
+			$this->conn = new PDO("mysql:host=localhost;dbname=db_php7, "admin", "123"); 
 		}
 	}
 ?>
