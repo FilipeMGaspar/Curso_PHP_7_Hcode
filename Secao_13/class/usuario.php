@@ -1,6 +1,6 @@
 <?php
 //Incluir script que permite mostrar os erros
-require_once "../../mostraerros.php";
+require_once "../mostraerros.php";
 
 	//Criação da class usuario
 	class Usuario{
@@ -44,9 +44,9 @@ require_once "../../mostraerros.php";
 
 		public function loadById($id){
 			$sql = new sql();
-			$results = sql->select("SELECT * FROM tb_usuarios WHERE idusuario= :ID", array(
+			$results = $sql->select("SELECT * FROM tb_usuarios WHERE idusuario= :ID", array(
 				":ID"=>$id
-			)):
+			));
 
 			if(count($results) > 0) {
 				$row = results[0];
