@@ -9,7 +9,7 @@ require_once "../mostraerros.php";
 
 		//Método construtor responsável pela ligação á base de dados
 		public function __construct(){
-			$this->conn = new PDO("mysql:host=localhost;dbname=db_php7, 'admin', '123'"); 
+			$this->conn = new PDO("mysql:host=localhost;dbname=db_php7", "admin", "123"); 
 		}
 
 		//Método privado para relacionar os dados recebidos com os valores a serem inseridos na tabela
