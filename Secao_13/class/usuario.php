@@ -112,7 +112,9 @@ require_once "../mostraerros.php";
 
 		//Aula 68
 		public function update(){
-			
+			$sql = new sql();
+
+			$sql->query("UPDATE tb_usuarios SET deslogim= :LOGIN");
 		}	
 		//Fim Aula 68
 
