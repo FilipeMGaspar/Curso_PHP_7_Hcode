@@ -31,7 +31,9 @@
 	echo $user;*/
 
 	$aluno = new usuario();
-
 	$aluno->setDeslogim("aluno");
 	$aluno->setDessenha("=2aLu&5P(");
+	$aluno->inserir();
+	echo $aluno;
+
 ?>
