@@ -126,6 +126,16 @@ require_once "../mostraerros.php";
 		}	
 		//Fim Aula 68
 
+		//Aula 69
+		public function delete(){
+			$sql = new sql();
+
+			$sql->query("DELETE FROM tb_usuarios WHERE idusuario= :ID", array(
+				":ID"=>$this->getIdusuario()
+			));
+		}
+		//Fim Aula 69
+
 		//Aula65
 		public function __toString(){
 			return json_encode(array(
