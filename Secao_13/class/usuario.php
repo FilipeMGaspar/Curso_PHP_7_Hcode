@@ -92,6 +92,12 @@ require_once "../mostraerros.php";
 			}		
 		}
 
+		//AULA 67 
+		public functio inserir(){
+			$sql = new sql();
+			$results = $sql->select("CALL sp_usuarios_insert()");
+		} 
+		//Fim Aula 67
 
 		//Aula65
 		public function __toString(){
