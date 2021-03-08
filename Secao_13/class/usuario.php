@@ -99,7 +99,7 @@ require_once "../mostraerros.php";
 			));
 
 			if(count($results) > 0){
-				
+				$this->setData($results[0]);
 			}
 		} 
 		//Fim Aula 67
