@@ -25,10 +25,13 @@
 	$search = usuario::search("ma");
 	echo json_encode($search);*/
 
-	//Carrega um usuario usando o login e a senha
-
+	/*//Carrega um usuario usando o login e a senha
 	$user = new usuario();
 	$user->login("tester", "A!1@aM#");
+	echo $user;*/
 
-	echo $user;
+	$aluno = new usuario();
+
+	$aluno->setDeslogim("aluno");
+	$aluno->setDessenha("=2aLu&5P(");
 ?>
