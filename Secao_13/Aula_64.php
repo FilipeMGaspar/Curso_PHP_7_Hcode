@@ -11,11 +11,11 @@
 
 	echo json_encode($usuarios);*/
 
-	//Carrega um usuario
-	//$root = new usuario();
-	//$root->loadById(7);
-	//echo $root;
-
+	/*//Carrega um usuario
+	$root = new usuario();
+	$root->loadById(7);
+	echo $root;
+	echo "<br><br>";*/
 
 	//Carrega uma lista de usuários
 	$lista = usuario::getList();
