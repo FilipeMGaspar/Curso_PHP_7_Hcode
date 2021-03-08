@@ -30,9 +30,9 @@
 	$user->login("tester", "A!1@aM#");
 	echo $user;*/
 
-	$aluno = new usuario();
-	$aluno->setDeslogim("aluno");
-	$aluno->setDessenha("=2aLu&5P(");
+	$aluno = new usuario("suporte", "]S0@Up23R#");
+	/*$aluno->setDeslogim("aluno");
+	$aluno->setDessenha("=2aLu&5P(");*/
 	$aluno->inserir();
 	echo $aluno;
 

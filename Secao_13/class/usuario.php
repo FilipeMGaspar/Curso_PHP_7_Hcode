@@ -91,7 +91,7 @@ require_once "../mostraerros.php";
 			$this->setDtcadastro(new DateTime(($data['dtcadastro'])));
 		}
 
-		public functio inserir(){
+		public function inserir(){
 			$sql = new sql();
 			$results = $sql->select("CALL sp_usuarios_insert(:LOGIN, :PASSWORD)", array(
 				":LOGIN"=>$this->getDeslogim(),
@@ -102,6 +102,11 @@ require_once "../mostraerros.php";
 				$this->setData($results[0]);
 			}
 		} 
+
+		public function __construct($login= "", $password= ""){
+			$this->setDeslogim($login);
+			$this->setDessenha($password);
+		}
 		//Fim Aula 67
 
 
