@@ -82,11 +82,8 @@ require_once "../mostraerros.php";
 
 			if(count($results) > 0) {
 				$row = $results[0];
-
-				$this->setIdusuario($row['idusuario']);
-				$this->setDeslogim($row['deslogim']);
-				$this->setDessenha($row['dessenha']);
-				$this->setDtcadastro(new DateTime(($row['dtcadastro'])));
+				$this->setData($results[0]);
+				
 			} else {
 				throw new Exception("Login e/ou senha inválidos!");
 			}		
@@ -100,6 +97,13 @@ require_once "../mostraerros.php";
 				":PASSWORD"=>$this->getDessenha()
 			));
 		} 
+
+		public function setData($data){
+			$this->setIdusuario($data['idusuario']);
+				$this->setDeslogim($data['deslogim']);
+				$this->setDessenha($data['dessenha']);
+				$this->setDtcadastro(new DateTime(($data['dtcadastro'])));
+		}
 		//Fim Aula 67
 
 		//Aula65
