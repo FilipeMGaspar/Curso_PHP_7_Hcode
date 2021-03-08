@@ -68,7 +68,7 @@ require_once "../mostraerros.php";
 		public static function search($login){
 			$sql = new sql();
 
-			$sql->select("SELECT * FROM tb_usuarios WHERE deslogim like :SEARCH ORDER BY deslogim", array(
+			return $sql->select("SELECT * FROM tb_usuarios WHERE deslogim like :SEARCH ORDER BY deslogim", array(
 			':SEARCH'=>'%'.$login.'%'));
 		}
 
