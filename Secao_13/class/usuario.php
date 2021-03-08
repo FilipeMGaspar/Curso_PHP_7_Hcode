@@ -58,6 +58,15 @@ require_once "../mostraerros.php";
 			}
 		}
 
+		//Aula66 -> Adicionado durante esta aula
+		public function getList(){
+			$sql = new sql();
+
+			$sql->select("SELECT * FROM tb_usuarios ORDER BY deslogim");
+		}
+
+
+		//Aula65
 		public function __toString(){
 			return json_encode(array(
 				"idusuario"=>$this->getIdusuario(),
