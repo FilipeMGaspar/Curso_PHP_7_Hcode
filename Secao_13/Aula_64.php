@@ -21,7 +21,14 @@
 	$lista = usuario::getList();
 	echo json_encode($lista);*/
 
-	//carrega uma lista de usuarios buscando pelo login
+	/*//carrega uma lista de usuarios buscando pelo login
 	$search = usuario::search("ma");
-	echo json_encode($search);
+	echo json_encode($search);*/
+
+	//Carrega um usuario usando o login e a senha
+
+	$user = new usuario();
+	$user->login("tester", "A!1@aM#");
+
+	echo $user;
 ?>
