@@ -17,8 +17,11 @@
 	echo $root;
 	echo "<br><br>";*/
 
-	//Carrega uma lista de usuários
+	/*//Carrega uma lista de usuários
 	$lista = usuario::getList();
-	echo json_encode($lista);
+	echo json_encode($lista);*/
 
+	//carrega uma lista de usuarios buscando pelo login
+	$search = usuario::search('M');
+	echo json_encode($search);
 ?>
