@@ -75,8 +75,9 @@ require_once "../mostraerros.php";
 		public function login($login, $password){
 
 			$sql = new sql();
-			$results = $sql->select("SELECT * FROM tb_usuarios WHERE deslogim= :ID", array(
-				":ID"=>$id
+			$results = $sql->select("SELECT * FROM tb_usuarios WHERE deslogim= :LOGIN AND dessenha= :PASSWORD", array(
+				":LOGIN"=>$login,
+				":PASSWORD"=>$password
 			));
 
 			if(count($results) > 0) {
