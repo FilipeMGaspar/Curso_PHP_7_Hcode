@@ -114,7 +114,11 @@ require_once "../mostraerros.php";
 		public function update(){
 			$sql = new sql();
 
-			$sql->query("UPDATE tb_usuarios SET deslogim= :LOGIN");
+			$sql->query("UPDATE tb_usuarios SET deslogim= :LOGIN, dessenha= :PASSWORD WHERE idusuario= :ID",array(
+				":LOGIN"=>$this->getDeslogim(),
+				":PASSWORD"=>$this->getDessenha(),
+				":ID"=>$this->getIdusuario()
+			));
 		}	
 		//Fim Aula 68
 
