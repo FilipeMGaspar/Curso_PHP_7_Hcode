@@ -30,10 +30,17 @@
 	$user->login("tester", "A!1@aM#");
 	echo $user;*/
 
-	$aluno = new usuario("suporte", "]S0@Up23R#");
-	/*$aluno->setDeslogim("aluno");
-	$aluno->setDessenha("=2aLu&5P(");*/
-	$aluno->inserir();
-	echo $aluno;
 
+	/*//Criando um novo usuario
+	$aluno = new usuario("suporte", "]S0@Up23R#");
+	//$aluno->setDeslogim("aluno");
+	//$aluno->setDessenha("=2aLu&5P(");
+	$aluno->inserir();
+	echo $aluno;*/
+
+	//Alterar um usuario
+	$user = new usuario();
+	$user->loadById(10);
+	$user->update("professor", "S!pr$@25A");
+	echo $user;
 ?>
