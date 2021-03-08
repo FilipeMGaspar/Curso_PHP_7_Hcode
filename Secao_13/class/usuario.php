@@ -95,7 +95,7 @@ require_once "../mostraerros.php";
 		//AULA 67 
 		public functio inserir(){
 			$sql = new sql();
-			$results = $sql->select("CALL sp_usuarios_insert()");
+			$results = $sql->select("CALL sp_usuarios_insert(:LOGIN, :PASSWORD)");
 		} 
 		//Fim Aula 67
 
