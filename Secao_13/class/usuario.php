@@ -86,7 +86,10 @@ require_once "../mostraerros.php";
 				$this->setIdusuario($row['idusuario']);
 				$this->setDeslogim($row['deslogim']);
 				$this->setDessenha($row['dessenha']);
-				$this->setDtcadastro(new DateTime(($row['dtcadastro'])));		
+				$this->setDtcadastro(new DateTime(($row['dtcadastro'])));
+			} else {
+				throw new Exception("Login e/ou senha inválidos!");
+			}		
 		}
 
 
