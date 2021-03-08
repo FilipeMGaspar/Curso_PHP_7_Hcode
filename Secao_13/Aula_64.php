@@ -22,6 +22,6 @@
 	echo json_encode($lista);*/
 
 	//carrega uma lista de usuarios buscando pelo login
-	$search = usuario::search("a");
+	$search = usuario::search("ma");
 	echo json_encode($search);
 ?>

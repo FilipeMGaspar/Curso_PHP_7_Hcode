@@ -72,6 +72,23 @@ require_once "../mostraerros.php";
 			':SEARCH'=>'%'.$login.'%'));
 		}
 
+		public function login($login, $password){
+
+			$sql = new sql();
+			$results = $sql->select("SELECT * FROM tb_usuarios WHERE idusuario= :ID", array(
+				":ID"=>$id
+			));
+
+			if(count($results) > 0) {
+				$row = $results[0];
+
+				$this->setIdusuario($row['idusuario']);
+				$this->setDeslogim($row['deslogim']);
+				$this->setDessenha($row['dessenha']);
+				$this->setDtcadastro(new DateTime(($row['dtcadastro'])));		
+		}
+		
+
 		//Aula65
 		public function __toString(){
 			return json_encode(array(
