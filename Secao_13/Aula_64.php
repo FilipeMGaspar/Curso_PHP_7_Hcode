@@ -18,4 +18,7 @@
 
 
 	//Carrega uma lista de usuários
+	$lista = usuario::getList();
+	echo json_encode($lista);
+
 ?>
