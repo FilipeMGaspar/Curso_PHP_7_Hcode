@@ -75,7 +75,7 @@ require_once "../mostraerros.php";
 		public function login($login, $password){
 
 			$sql = new sql();
-			$results = $sql->select("SELECT * FROM tb_usuarios WHERE idusuario= :ID", array(
+			$results = $sql->select("SELECT * FROM tb_usuarios WHERE deslogim= :ID", array(
 				":ID"=>$id
 			));
 
@@ -87,7 +87,7 @@ require_once "../mostraerros.php";
 				$this->setDessenha($row['dessenha']);
 				$this->setDtcadastro(new DateTime(($row['dtcadastro'])));		
 		}
-		
+
 
 		//Aula65
 		public function __toString(){
