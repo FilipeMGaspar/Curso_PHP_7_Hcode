@@ -133,6 +133,11 @@ require_once "../mostraerros.php";
 			$sql->query("DELETE FROM tb_usuarios WHERE idusuario= :ID", array(
 				":ID"=>$this->getIdusuario()
 			));
+
+			$this->setIdusuario(0);
+			$this->setDeslogim("");
+			$this->setDessenha("");
+			$this->setDtcadastro(new DateTime());
 		}
 		//Fim Aula 69
 
