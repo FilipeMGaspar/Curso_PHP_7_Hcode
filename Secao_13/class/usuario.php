@@ -111,7 +111,11 @@ require_once "../mostraerros.php";
 
 
 		//Aula 68
-		public function update(){
+		public function update($login, $password){
+
+			$this->setDeslogim($login);
+			$this->setDessenha($password);
+
 			$sql = new sql();
 
 			$sql->query("UPDATE tb_usuarios SET deslogim= :LOGIN, dessenha= :PASSWORD WHERE idusuario= :ID",array(
