@@ -110,6 +110,12 @@ require_once "../mostraerros.php";
 		//Fim Aula 67
 
 
+		//Aula 68
+		public function update(){
+			
+		}	
+		//Fim Aula 68
+
 		//Aula65
 		public function __toString(){
 			return json_encode(array(
