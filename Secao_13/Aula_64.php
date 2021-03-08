@@ -28,7 +28,7 @@
 	//Carrega um usuario usando o login e a senha
 
 	$user = new usuario();
-	$user->login("tester", "A!1@aM#");
+	$user->login("tester", "zA!1@aM#");
 
 	echo $user;
 ?>
