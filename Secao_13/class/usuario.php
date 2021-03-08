@@ -59,10 +59,10 @@ require_once "../mostraerros.php";
 		}
 
 		//Aula66 -> Adicionado durante esta aula
-		public function getList(){
+		public static function getList(){
 			$sql = new sql();
 
-			$sql->select("SELECT * FROM tb_usuarios ORDER BY deslogim");
+			return $sql->select("SELECT * FROM tb_usuarios ORDER BY deslogim");
 		}
 
 

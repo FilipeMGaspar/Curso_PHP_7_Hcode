@@ -11,9 +11,11 @@
 
 	echo json_encode($usuarios);*/
 
-	$root = new usuario();
+	//Carrega um usuario
+	//$root = new usuario();
+	//$root->loadById(7);
+	//echo $root;
 
-	$root->loadById(7);
 
-	echo $root;
+	//Carrega uma lista de usuários
 ?>
