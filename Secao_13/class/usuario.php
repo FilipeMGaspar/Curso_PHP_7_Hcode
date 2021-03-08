@@ -49,12 +49,7 @@ require_once "../mostraerros.php";
 			));
 
 			if(count($results) > 0) {
-				$row = $results[0];
-
-				$this->setIdusuario($row['idusuario']);
-				$this->setDeslogim($row['deslogim']);
-				$this->setDessenha($row['dessenha']);
-				$this->setDtcadastro(new DateTime(($row['dtcadastro'])));
+				$this->setData($results[0]);
 			}
 		}
 
@@ -81,7 +76,6 @@ require_once "../mostraerros.php";
 			));
 
 			if(count($results) > 0) {
-				$row = $results[0];
 				$this->setData($results[0]);
 				
 			} else {
@@ -90,6 +84,13 @@ require_once "../mostraerros.php";
 		}
 
 		//AULA 67 
+		public function setData($data){
+			$this->setIdusuario($data['idusuario']);
+			$this->setDeslogim($data['deslogim']);
+			$this->setDessenha($data['dessenha']);
+			$this->setDtcadastro(new DateTime(($data['dtcadastro'])));
+		}
+
 		public functio inserir(){
 			$sql = new sql();
 			$results = $sql->select("CALL sp_usuarios_insert(:LOGIN, :PASSWORD)", array(
@@ -97,14 +98,8 @@ require_once "../mostraerros.php";
 				":PASSWORD"=>$this->getDessenha()
 			));
 		} 
-
-		public function setData($data){
-			$this->setIdusuario($data['idusuario']);
-				$this->setDeslogim($data['deslogim']);
-				$this->setDessenha($data['dessenha']);
-				$this->setDtcadastro(new DateTime(($data['dtcadastro'])));
-		}
 		//Fim Aula 67
+
 
 		//Aula65
 		public function __toString(){
