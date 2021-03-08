@@ -97,6 +97,10 @@ require_once "../mostraerros.php";
 				":LOGIN"=>$this->getDeslogim(),
 				":PASSWORD"=>$this->getDessenha()
 			));
+
+			if(count($results) > 0){
+				
+			}
 		} 
 		//Fim Aula 67
 
