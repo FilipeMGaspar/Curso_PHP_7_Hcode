@@ -65,6 +65,12 @@ require_once "../mostraerros.php";
 			return $sql->select("SELECT * FROM tb_usuarios ORDER BY deslogim");
 		}
 
+		public static function search($login){
+			$sql = new sql();
+
+			$sql->select("SELECT * FROM tb_usuarios WHERE deslogim like ? ORDER BY deslogim", array(
+			));
+		}
 
 		//Aula65
 		public function __toString(){
