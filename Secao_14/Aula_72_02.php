@@ -7,15 +7,19 @@ require_once "../mostraerros.php";
 		$file = fopen("imagens/a.txt", "w+");
 		fwrite($file, "a.txt" . "\r\n");
 		fclose($file);
-		
-		$file = fopen("log01.txt", "w+");
+
+		$file = fopen("log.txt", "w+");
 		fwrite($file, date("d/m/Y H:i:s") . "\r\n");
 		fclose($file);
 
 		echo "Ficheiros Criados com sucesso! <br>";
 		
 	}else {
+		unlink("imagens/a.txt");
+		unlink("imagens/log.txt");
 		rmdir("imagens");
+
+		echo "Pasta REMOVIDA com sucesso!<br>";
 	}
 /*
 	foreach (scandir("imagem") as $item) {
