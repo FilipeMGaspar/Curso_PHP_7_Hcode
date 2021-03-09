@@ -7,6 +7,7 @@ require_once "../mostraerros.php";
 		$file = fopen("imagens/a.txt", "w+");
 		fwrite($file, "a.txt" . "\r\n");
 		fclose($file);
+		
 		$file = fopen("log01.txt", "w+");
 		fwrite($file, date("d/m/Y H:i:s") . "\r\n");
 		fclose($file);
