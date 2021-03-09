@@ -16,6 +16,15 @@ require_once "../mostraerros.php";
 		array_push($headers, ucfirst($key));
 	}
 
+	$file = fopen("usuarios.csv", "w+");
+
+	fwrite($file, implode(", ", $headers));
+
+	foreach ($usuarios as $key => $value) {
+		
+	}
+
+	fclose($file);
 	//print_r($headers);
-	echo implode(", ", $headers);
+	//echo implode(", ", $headers);
 ?>
