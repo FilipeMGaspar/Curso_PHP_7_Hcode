@@ -12,6 +12,10 @@
 
 			$info = pathinfo($filename);
 
+			$info["size"] = filesize($filename);
+
+			$info["modifed"] = data("d/m/Y H:i:s", fileatime($filename));
+
 			//var_dump($info);
 
 			array_push($data, $info);
