@@ -16,7 +16,7 @@
 
 			$info["modifed"] = date("d/m/Y H:i:s", fileatime($filename));
 
-			$info['url'] = "http://192.168.0.250/Curso_PHP_7_Hcode/Secao_14/img/" . $filename;
+			$info['url'] = "http://192.168.0.250/Curso_PHP_7_Hcode/Secao_14/img/" . str_replace("\\" , "/", $filename);
 
 			//var_dump($info);
 
