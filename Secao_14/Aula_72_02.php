@@ -7,11 +7,12 @@ require_once "../mostraerros.php";
 		$file = fopen("imagens/a.txt", "w+");
 		fwrite($file, "a.txt" . "\r\n");
 		fclose($file);
+		echo "Ficheiro Criado com sucesso! <br>"
 		/*$file = fopen("log01.txt", "a+");
 		fwrite($file, date("d/m/Y H:i:s") . "\r\n");
 		fclose($file);*/
 	}
-
+/*
 	foreach (scandir("imagem") as $item) {
 		if(!in_array($item, array(".", ".."))){
 			unlink("imagem/" . $item);
@@ -19,5 +20,5 @@ require_once "../mostraerros.php";
 	}
 	
 	echo "Ficheiros REMOVIDOS com sucesso!";
-
+*/
 ?>
