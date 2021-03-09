@@ -4,5 +4,5 @@
 
 	$file = fopen("log.txt", "w+");//caminho do arquivo, modo de abertura leitura, escrita
 
-	fwrite($file, date());
+	fwrite($file, date("d/m/Y H:i:s"));
 ?>
