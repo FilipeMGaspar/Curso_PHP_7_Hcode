@@ -7,10 +7,14 @@ require_once "../mostraerros.php";
 		$file = fopen("imagens/a.txt", "w+");
 		fwrite($file, "a.txt" . "\r\n");
 		fclose($file);
-		echo "Ficheiro Criado com sucesso! <br>"
-		/*$file = fopen("log01.txt", "a+");
+		$file = fopen("log01.txt", "w+");
 		fwrite($file, date("d/m/Y H:i:s") . "\r\n");
-		fclose($file);*/
+		fclose($file);
+
+		echo "Ficheiros Criados com sucesso! <br>";
+		
+	}else {
+		rmdir("imagens");
 	}
 /*
 	foreach (scandir("imagem") as $item) {
