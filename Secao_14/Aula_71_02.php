@@ -18,20 +18,21 @@ require_once "../mostraerros.php";
 
 	$file = fopen("usuarios.csv", "w+");
 
-	fwrite($file, implode(", ", $headers));
+	fwrite($file, implode(", ", $headers) . "\r\n");
 
-	foreach ($usuarios as $key => $value) {//nas linhas
+	foreach ($usuarios as $row) {//nas linhas
 		$data = array();
 		
 		foreach ($row as $key => $value) {//nas colunas
 			array_push($data, $value);
 		}
 
-		fwrite($file, implode(", ", $data). "\r\n");
+		fwrite($file, implode(", ", $data). "\r\n");//linha
 	}
 	
 	fclose($file);
 
+	echo "Exportação efectuada com SUCESSO!";
 	//print_r($headers);
 	//echo implode(", ", $headers);
 ?>
