@@ -16,6 +16,8 @@
 
 			$info["modifed"] = date("d/m/Y H:i:s", fileatime($filename));
 
+			$info['url'] = "http://192.168.0.250/Curso_PHP_7_Hcode/Secao_14/img/" . $filename;
+
 			//var_dump($info);
 
 			array_push($data, $info);
