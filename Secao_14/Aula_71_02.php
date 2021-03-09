@@ -21,7 +21,11 @@ require_once "../mostraerros.php";
 	fwrite($file, implode(", ", $headers));
 
 	foreach ($usuarios as $key => $value) {
+		$data = array();
 		
+		foreach ($row as $key => $value) {
+			array_push($data, $value);
+		}
 	}
 
 	fclose($file);
