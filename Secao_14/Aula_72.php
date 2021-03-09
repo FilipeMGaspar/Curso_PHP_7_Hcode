@@ -5,5 +5,8 @@ require_once "../mostraerros.php";
 	$file = fopen("teste.txt", "w+");
 
 	fclose($file);
-	unlink($file);
+
+	unlink("teste.txt");
+
+	echo "Ficheiro removido Com Sucesso!";
 ?>
