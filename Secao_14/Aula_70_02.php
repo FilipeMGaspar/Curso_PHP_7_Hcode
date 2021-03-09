@@ -4,16 +4,21 @@
 
 	$imgs = scandir('img');
 
+	$data = array();
+
 	foreach ($imgs as $img) {
 		if(!in_array($img, array(".", ".."))){//evita o . e o ..
 			$filename = 'img' . DIRECTORY_SEPARATOR . $img;
 
 			$info = pathinfo($filename);
 
-			var_dump($info);
+			//var_dump($info);
+
+			array_push($data, $info);
 		}
 	}
-	
-	//var_dump($imgs);
 
+	echo json_encode($data);
+
+	//var_dump($imgs);
 ?>
