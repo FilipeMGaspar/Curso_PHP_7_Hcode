@@ -8,7 +8,7 @@ require_once "../mostraerros.php";
 
 	foreach (scandir("imagem") as $item) {
 		if(!in_array($item, array(".", ".."))){
-
+			unlink("imagem/" . $item);
 		}
 	}
 	
