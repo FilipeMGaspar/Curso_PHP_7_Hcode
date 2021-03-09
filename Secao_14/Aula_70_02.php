@@ -25,7 +25,7 @@
 			var_dump($info);
 			echo "<br><br>";*/
 
-			$info['url'] = "http://192.168.0.250/Curso_PHP_7_Hcode/Secao_14/img/" . str_replace("\/\/" , "/", $filename);
+			$info['url'] = "http://192.168.0.250/Curso_PHP_7_Hcode/Secao_14/" . str_replace("\/\/" , "/", $filename);
 
 			//var_dump($info);
 
