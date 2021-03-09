@@ -14,7 +14,7 @@
 
 			$info["size"] = filesize($filename);
 
-			$info["modifed"] = data("d/m/Y H:i:s", fileatime($filename));
+			$info["modifed"] = date("d/m/Y H:i:s", fileatime($filename));
 
 			//var_dump($info);
 
