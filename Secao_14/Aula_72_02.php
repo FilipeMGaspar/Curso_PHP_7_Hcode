@@ -4,6 +4,12 @@ require_once "../mostraerros.php";
 	 
 	if(!is_dir("imagens")){
 		mkdir("imagens");
+		$file = fopen("imagens/a.txt", "w+");
+		fwrite($file, "a.txt" . "\r\n");
+		fclose($file);
+		/*$file = fopen("log01.txt", "a+");
+		fwrite($file, date("d/m/Y H:i:s") . "\r\n");
+		fclose($file);*/
 	}
 
 	foreach (scandir("imagem") as $item) {
