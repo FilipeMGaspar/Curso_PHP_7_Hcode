@@ -10,13 +10,17 @@
 		if(!in_array($img, array(".", ".."))){//evita o . e o ..
 			$filename = 'img' . DIRECTORY_SEPARATOR . $img;
 
+			var_dump($filename);
+			echo "<br><br>"
+
 			$info = pathinfo($filename);
 
 			$info["size"] = filesize($filename);
 
 			$info["modifed"] = date("d/m/Y H:i:s", fileatime($filename));
+			//$info['url'] = "http://192.168.0.250/Curso_PHP_7_Hcode/Secao_14/img/";
 
-			$info['url'] = "http://192.168.0.250/Curso_PHP_7_Hcode/Secao_14/img/" . str_replace("\\" , "/", $filename);
+			$info['url'] = "http://192.168.0.250/Curso_PHP_7_Hcode/Secao_14/img/" . str_replace("\/\/" , "/", $filename);
 
 			//var_dump($info);
 
