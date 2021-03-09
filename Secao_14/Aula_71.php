@@ -2,9 +2,11 @@
 	//Incluir script que permite mostrar os erros
 	require_once "../mostraerros.php";
 
-	$file = fopen("log.txt", "w+");//caminho do arquivo, modo de abertura leitura, escrita
+	//$file = fopen("log.txt", "w+");//caminho do arquivo, modo de abertura leitura, escrita "w+ cria o ficheiro se não existir"
 
-	fwrite($file, date("d/m/Y H:i:s"));
+	$file = fopen("log01.txt", "a+");
+
+	fwrite($file, date("d/m/Y H:i:s") . "\r\n");
 
 	fclose($file);
 
