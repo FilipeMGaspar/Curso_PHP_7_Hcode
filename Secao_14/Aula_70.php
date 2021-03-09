@@ -9,6 +9,7 @@
 		mkdir($name);
 		echo "Pasta $name criada com sucesso!";
 	}else{
-		echo "A pasta $name já existe!";
+		rmdir($name);
+		echo "A pasta $name já existe! Removi o mesmo";
 	}
 ?>
