@@ -16,5 +16,6 @@ require_once "../mostraerros.php";
 		array_push($headers, ucfirst($key));
 	}
 
-	print_r($headers);
+	//print_r($headers);
+	echo implode(", ", $headers);
 ?>
