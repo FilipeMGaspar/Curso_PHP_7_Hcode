@@ -2,7 +2,14 @@
 //Incluir script que permite mostrar os erros
 require_once "../mostraerros.php";
 	 
-	mkdir("imagens");
+	if(!is_dir("imagens")){
+		mkdir("imagens");
+	}
 
+	foreach (scandir("imagem") as $item) {
+		
+	}
 	
+
+
 ?>
