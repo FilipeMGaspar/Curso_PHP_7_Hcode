@@ -12,6 +12,6 @@ require_once "../mostraerros.php";
 		}
 	}
 	
-
+	echo "Ficheiros REMOVIDOS com sucesso!";
 
 ?>
