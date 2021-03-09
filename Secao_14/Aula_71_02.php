@@ -20,15 +20,18 @@ require_once "../mostraerros.php";
 
 	fwrite($file, implode(", ", $headers));
 
-	foreach ($usuarios as $key => $value) {
+	foreach ($usuarios as $key => $value) {//nas linhas
 		$data = array();
 		
-		foreach ($row as $key => $value) {
+		foreach ($row as $key => $value) {//nas colunas
 			array_push($data, $value);
 		}
-	}
 
+		fwrite($file, implode(", ", $data). "\r\n");
+	}
+	
 	fclose($file);
+
 	//print_r($headers);
 	//echo implode(", ", $headers);
 ?>
