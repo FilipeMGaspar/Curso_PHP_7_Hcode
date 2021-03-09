@@ -5,7 +5,10 @@
 	$name = "images";
 
 	//verifica se a pasta existe
-	if(!is_dir($name)){
+	if(!is_dir($name)){// Se não existe
 		mkdir($name);
+		echo "Pasta $name criada com sucesso!";
+	}else{
+		echo "A pasta $name já existe!";
 	}
 ?>
