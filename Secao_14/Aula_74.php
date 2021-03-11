@@ -17,4 +17,9 @@ require_once "../mostraerros.php";
 		}
 	}
 
+	$dirUploads = "uploads";
+
+	if(!is_dir($dirUploads)){
+		mkdir($dirUploads);
+	}
 ?>
