@@ -8,7 +8,7 @@ require_once "../mostraerros.php";
 
 		$file = fopen($filename, "r");//r leitura
 
-		$headers = fgets($file);
+		$headers = explode(",",fgets($file));
 
 		var_dump($headers);
 	}
