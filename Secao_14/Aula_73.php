@@ -22,12 +22,15 @@ require_once "../mostraerros.php";
 			$linha = array();
 
 			for($i = 0; $i < count($headers); $i++){
-				$linha[$headers[$i]] = 
+				$linha[$headers[$i]] = $rowData[$i];
 			}
 
+			array_push($data, $linha);
 		}
 
 		fclose($file);
+
+		echo json_encode($data);
 		
 	}
 
