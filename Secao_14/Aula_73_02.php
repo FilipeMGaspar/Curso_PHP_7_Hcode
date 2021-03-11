@@ -6,6 +6,10 @@ require_once "../mostraerros.php";
 
 	$base64 = base64_encode(file_get_contents($filename));
 
-	echo "data : image.png;base64,". $base64;
+	$fileInfo = new finfo(FILEINFO_MIME_TYPE);
+
+	$minetype = $fileInfo->file($filename);
+
+	echo "data:image/png;base64,". $base64;
 
 ?>
