@@ -12,8 +12,18 @@ require_once "../mostraerros.php";
 
 		//var_dump($headers);
 
+		$data = array();
+
 		while($row = fgets($file)){ //fgets() retorna false quando não existem mais linhas
-			var_dump($row);
+			//var_dump(explode(',',$row);
+
+			$rowData = explode(',',$row);
+
+			$linha = array();
+
+			for($i = 0; $i < count($headers); $i++){
+				$linha[$headers[$i]] = 
+			}
 
 		}
 
