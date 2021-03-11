@@ -22,4 +22,10 @@ require_once "../mostraerros.php";
 	if(!is_dir($dirUploads)){
 		mkdir($dirUploads);
 	}
+
+	if(move_uploaded_file(, destination)){
+
+	} else {
+		throw new Exception("Não foi possivel realizar o upload! Lamentamos.");
+	}
 ?>
