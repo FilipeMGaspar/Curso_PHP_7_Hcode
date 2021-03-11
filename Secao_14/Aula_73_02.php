@@ -10,13 +10,17 @@ require_once "../mostraerros.php";
 
 	$minetype = $fileInfo->file($filename);
 
-	//echo "data:image/png;base64,". $base64; //Modo estático
+	echo "data:image/png;base64,". $base64; //Modo estático
 
 	$base64encode = "data:" . $minetype . ";base64,". $base64;
 
 	echo "<br>";
 
-	echo "<a>" . "Link Para Imagem" . "</a>";
+	echo "<a href=" . '"' . $base64encode . '"'." target=".'"_blank"'.">" . "Link Para Imagem" . "</a>";
+
+	echo "<br>";
+
+	echo "<img src=" .'"' . $base64encode . '"'.">";
 	/*<a href="<?=base64encode?>" target = "_blank"> Link Para IMAGEM !</a>
 	<img src="<?=base64encode?>">*/
 ?>
