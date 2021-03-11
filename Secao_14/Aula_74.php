@@ -23,7 +23,7 @@ require_once "../mostraerros.php";
 		mkdir($dirUploads);
 	}
 
-	if(move_uploaded_file(, destination)){
+	if(move_uploaded_file($file["tmp_name"], $dirUploads . DIRECTORY_SEPARATOR . $file["name"])){
 
 	} else {
 		throw new Exception("Não foi possivel realizar o upload! Lamentamos.");
