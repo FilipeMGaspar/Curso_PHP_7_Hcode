@@ -1,6 +1,6 @@
 <form method="POST" enctype="multipart/form-data">
 	<input type="file" name="fileupload">
-	
+
 	<button type="submit">Enviar</button>
 </form>
 
@@ -8,5 +8,8 @@
 //Incluir script que permite mostrar os erros
 require_once "../mostraerros.php";
 	
+	if($_SERVER["REQUEST_METHOD"] === "POST") {
+		
+	}
 
 ?>
