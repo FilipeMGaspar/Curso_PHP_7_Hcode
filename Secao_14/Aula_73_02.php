@@ -12,5 +12,13 @@ require_once "../mostraerros.php";
 
 	//echo "data:image/png;base64,". $base64; //Modo estático
 
-	$base60encode = "data:" . $minetype . ";base64,". $base64;
+	$base64encode = "data:" . $minetype . ";base64,". $base64;
+
+	echo "<br>";
+
+	echo "<a>" . "Link Para Imagem" . "</a>";
+	/*<a href="<?=base64encode?>" target = "_blank"> Link Para IMAGEM !</a>
+	<img src="<?=base64encode?>">*/
 ?>
+
+
