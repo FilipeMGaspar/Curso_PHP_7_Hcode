@@ -10,7 +10,15 @@ require_once "../mostraerros.php";
 
 		$headers = explode(",",fgets($file));
 
-		var_dump($headers);
+		//var_dump($headers);
+
+		while($row = fgets($file)){ //fgets() retorna false quando não existem mais linhas
+			var_dump($row);
+
+		}
+
+		fclose($file);
+		
 	}
 
 ?>
