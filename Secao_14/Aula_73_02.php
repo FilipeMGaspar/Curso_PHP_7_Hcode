@@ -10,6 +10,7 @@ require_once "../mostraerros.php";
 
 	$minetype = $fileInfo->file($filename);
 
-	echo "data:image/png;base64,". $base64;
+	//echo "data:image/png;base64,". $base64; //Modo estático
 
+	$base60encode = "data:" . $minetype . ";base64,". $base64;
 ?>
