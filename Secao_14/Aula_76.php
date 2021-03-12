@@ -13,5 +13,9 @@ require_once "../mostraerros.php";
 		mkdir($dir2);
 	}
 
-	
+	$filename = "README.txt";
+
+	if(file_exists($filename)){
+		
+	}
 ?>
