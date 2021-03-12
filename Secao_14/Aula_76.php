@@ -22,5 +22,10 @@ require_once "../mostraerros.php";
 		fclose($file);
 	}
 
-	rename($dir1 . DIRECTORY_SEPARATOR . $filename, newname);
+	rename(
+		$dir1 . DIRECTORY_SEPARATOR . $filename, //Origem
+		$dir2 . DIRECTORY_SEPARATOR . $filename //Destino
+	);
+
+	echo "";
 ?>
