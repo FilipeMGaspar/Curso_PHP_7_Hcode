@@ -16,4 +16,9 @@ require_once "../mostraerros.php";
 	$file = fopen($basename, "w+");
 
 	fwrite($file, $content);
+
+	fclose($file);
+
 ?>
+
+<img src="<?=basename?>">
