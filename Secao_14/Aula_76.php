@@ -21,4 +21,6 @@ require_once "../mostraerros.php";
 		fwrite($file, date("d/m/Y H:i:s"));
 		fclose($file);
 	}
+
+	rename($dir1 . DIRECTORY_SEPARATOR . $filename, newname);
 ?>
