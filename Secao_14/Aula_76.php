@@ -27,5 +27,5 @@ require_once "../mostraerros.php";
 		$dir2 . DIRECTORY_SEPARATOR . $filename //Destino
 	);
 
-	echo "Arquivo " . $filename . "movido com êxito!"; 
+	echo "Arquivo " . $filename . " movido com êxito!"; 
 ?>
