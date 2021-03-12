@@ -21,4 +21,4 @@ require_once "../mostraerros.php";
 
 ?>
 
-<img src="<?=basename?>">
+<img src="<?=$basename?>">
