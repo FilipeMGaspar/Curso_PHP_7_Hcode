@@ -12,4 +12,6 @@ require_once "../mostraerros.php";
 	if(!is_dir($dir2)){
 		mkdir($dir2);
 	}
+
+	
 ?>
