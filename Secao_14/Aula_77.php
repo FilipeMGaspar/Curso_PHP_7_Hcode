@@ -7,4 +7,7 @@ require_once "../mostraerros.php";
 	$cep = "01310100";
 
 	$link = "https://viacep.com.br/ws/$cep/json/";
+
+	$ch = curl_init($link);
+	
 ?>
