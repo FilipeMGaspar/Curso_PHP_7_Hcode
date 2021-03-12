@@ -8,7 +8,8 @@ require_once "../mostraerros.php";
 	//var_dump($content);
 
 	$parse = parse_url($link);
-	var_dump($parse);
+	//var_dump($parse);
+	
 	//var_dump(basename($parse["path"]));
-
+	$basename = basename($parse["path"]);
 ?>
