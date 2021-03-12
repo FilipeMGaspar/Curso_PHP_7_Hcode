@@ -15,7 +15,7 @@ require_once "../mostraerros.php";
 
 	$filename = "README.txt";
 
-	if(file_exists($filename)){
-		
+	if(file_exists($dir1 . DIRECTORY_SEPARATOR . $filename)){
+		$file = fopen($dir1 . DIRECTORY_SEPARATOR . $filename, "w+");
 	}
 ?>
