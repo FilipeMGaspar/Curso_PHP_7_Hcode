@@ -17,5 +17,8 @@ require_once "../mostraerros.php";
 
 	if(file_exists($dir1 . DIRECTORY_SEPARATOR . $filename)){
 		$file = fopen($dir1 . DIRECTORY_SEPARATOR . $filename, "w+");
+
+		fwrite($file, date("d/m/Y H:i:s"));
+		fclose();
 	}
 ?>
