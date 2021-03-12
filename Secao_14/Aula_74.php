@@ -24,6 +24,7 @@ require_once "../mostraerros.php";
 	}
 
 	if(move_uploaded_file($file["tmp_name"], $dirUploads . DIRECTORY_SEPARATOR . $file["name"])){
+		echo "Upload realizado com SUCESSO!";
 
 	} else {
 		throw new Exception("Não foi possivel realizar o upload! Lamentamos.");
