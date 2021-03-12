@@ -9,5 +9,6 @@ require_once "../mostraerros.php";
 	$link = "https://viacep.com.br/ws/$cep/json/";
 
 	$ch = curl_init($link);
-	
+
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER , 1);
 ?>
