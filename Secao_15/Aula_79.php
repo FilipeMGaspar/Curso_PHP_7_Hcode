@@ -3,8 +3,9 @@
 require_once "../mostraerros.php";
 	
 	try{
+		throw new Exception("Houve um erro.", 400);
 		
-	} catch (){
-
+	} catch (Exception $exp){
+		
 	}
 ?>
