@@ -11,13 +11,12 @@ require_once "../mostraerros.php";
 	}
 
 	try {
-
-		tratanome("João");
-		tratanome("");
+		trataNome("João");
+		//trataNome("");
 	}catch(Exception $e){
 		echo $e->getMessage();
 	}finally{
-		echo "Executou o bloco Try";
+		echo "<br>Executou o bloco Try";
 	}
 
 ?>
