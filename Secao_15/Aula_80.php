@@ -10,6 +10,7 @@ require_once "../mostraerros.php";
 			"line"=>$line,
 			"file"=>$file
 		));
-
 	}
+
+	set_error_handler("error_handler");
 ?>
