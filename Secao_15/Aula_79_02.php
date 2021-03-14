@@ -16,6 +16,8 @@ require_once "../mostraerros.php";
 		tratanome("");
 	}catch(Exception $e){
 		echo $e->getMessage();
+	}finally{
+		echo "Executou o bloco Try";
 	}
 
 ?>
