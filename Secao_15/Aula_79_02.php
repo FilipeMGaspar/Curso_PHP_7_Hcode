@@ -7,8 +7,15 @@ require_once "../mostraerros.php";
 			throw new Exception("Nenhum nome foi informado.", 1);
 			
 		}
+		echo ucfirst($nome)."<br>";
 	}
 
-	echo ucfirst($nome)."<br>";
+	try {
+
+		tratanome("João");
+		tratanome("");
+	}catch(Exception $e){
+		echo $e->getMessage();
+	}
 
 ?>
