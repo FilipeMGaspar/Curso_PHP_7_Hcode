@@ -10,7 +10,7 @@ require_once "../mostraerros.php";
 			"message"=>$e->getMessage(),
 			"line"=>$e->getLine(),
 			"file"=>$e->getFile(),
-			"code"=>$e=>getCode()
+			"code"=>$e->getCode()
 		));
 	}
 ?>
