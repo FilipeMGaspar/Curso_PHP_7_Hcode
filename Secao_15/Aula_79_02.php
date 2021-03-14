@@ -3,10 +3,10 @@
 //require_once "../mostraerros.php";
 
 	function trataNome($nome){
-		
+	
 		echo ucfirst($nome)."<br>";
 
-		if($name == ""){
+		if(!$name){
 			throw new Exception("Nenhum nome foi informado.", 1);			
 		}
 		
@@ -15,7 +15,7 @@
 
 	try {
 		trataNome("João");
-		//trataNome("");
+		trataNome("");
 	}catch(Exception $e){
 		echo $e->getMessage();
 	}finally{
