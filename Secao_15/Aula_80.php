@@ -13,4 +13,6 @@ require_once "../mostraerros.php";
 	}
 
 	set_error_handler("error_handler");
+
+	echo 100/0;
 ?>
