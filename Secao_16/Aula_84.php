@@ -25,5 +25,8 @@ require_once "../mostraerros.php";
 
 	imagecopyresampled($new_image, $old_image, 0, 0, 0, 0, $new_width, $new_height, $old_width, $old_height);
 
-	
+	imagejpeg($new_image);
+
+	imagedestroy($old_image);
+	imagedestroy($new_image);
 ?>
