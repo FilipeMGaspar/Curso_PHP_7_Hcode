@@ -21,4 +21,6 @@ require_once "../mostraerros.php";
 
 	$new_image = imagecreatetruecolor($new_width, $new_height);
 
+	$old_image = imagecreatefromjpeg($file);
+
 ?>
