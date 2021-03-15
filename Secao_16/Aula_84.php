@@ -2,7 +2,7 @@
 //Incluir script que permite mostrar os erros
 require_once "../mostraerros.php";
 
-	//header("Content-type: image/jpeg");
+	header("Content-type: image/jpeg");
 
 	$file = "wallpaper.jpg";
 
@@ -12,9 +12,13 @@ require_once "../mostraerros.php";
 	//var_dump(getimagesize($file));
 	$data = getimagesize($file);
 
+	/*
 	$width = $data[0];
 	$height = $data[1];
+	*/
 
 	list($old_width, $old_height) = getimagesize($file);
+
+	$new_image = imagecreatetruecolor($new_width, $new_height);
 
 ?>
