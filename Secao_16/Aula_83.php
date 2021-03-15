@@ -10,7 +10,7 @@ require_once "../mostraerros.php";
 
 	imagettftext($image, 32, 0, 450, 150,  $titleColor, "fonts" . DIRECTORY_SEPARATOR . "Bevan". DIRECTORY_SEPARATOR . "Bevan-Regular.ttf", "CERTIFICADO");
 
-	imagettftext($image, 28, 0, 440, 350, $titleColor, "fonts" . DIRECTORY_SEPARATOR . "Bevan". DIRECTORY_SEPARATOR . "Bevan-Regular.ttf", "Divanei Aparecida");
+	imagettftext($image, 28, 0, 440, 350, $titleColor, "fonts" . DIRECTORY_SEPARATOR . "Playball". DIRECTORY_SEPARATOR . "Playball-Regular.ttf", "Divanei Aparecida");
 
 	imagestring($image, 3, 440, 370, utf8_decode("Concluído em: ").date("d/m/Y"), $titleColor);
 
