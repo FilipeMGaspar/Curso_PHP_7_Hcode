@@ -13,4 +13,6 @@ require_once "../mostraerros.php";
 	imagestring($image, 5, 440, 350, "Divanei Aparecida", $titleColor);
 
 	imagestring($image, 3, 440, 370, "concluido em: ".date("d/m/Y"), $titleColor);
+
+	header("Content-type: image/jpeg");
 ?>
