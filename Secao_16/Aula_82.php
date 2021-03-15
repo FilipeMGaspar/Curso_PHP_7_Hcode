@@ -15,4 +15,8 @@ require_once "../mostraerros.php";
 	imagestring($image, 3, 440, 370, "concluido em: ".date("d/m/Y"), $titleColor);
 
 	header("Content-type: image/jpeg");
+
+	imagejpeg($image);
+
+	imagedestroy($image);
 ?>
