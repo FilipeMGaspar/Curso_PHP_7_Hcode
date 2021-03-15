@@ -11,4 +11,8 @@ require_once "../mostraerros.php";
 
 	imagestring($image, 5, 60, 120, "Curso PHP 7.0", $red);
 
+	imagepng($image);
+
+	imagedestroy($image);
+
 ?>
