@@ -10,6 +10,11 @@ require_once "../mostraerros.php";
 	$new_height = 256;
 
 	//var_dump(getimagesize($file));
-	getimagesize($file);
+	$data = getimagesize($file);
+
+	$width = $data[0];
+	$height = $data[1];
+
+	list($old_width, $old_height) = getimagesize($file);
 
 ?>
