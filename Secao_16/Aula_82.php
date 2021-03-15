@@ -16,7 +16,7 @@ require_once "../mostraerros.php";
 
 	header("Content-type: image/jpeg");
 
-	imagejpeg($image);
+	imagejpeg($image, "certificado-".date("d-m-Y").".jpg", 10);
 
 	imagedestroy($image);
 ?>
