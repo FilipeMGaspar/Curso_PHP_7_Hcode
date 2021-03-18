@@ -2,7 +2,6 @@
 //Incluir script que permite mostrar os erros
 require_once "../mostraerros.php";
 	
-	<?php
 // +----------------------------------------------------------------------+
 // | BoletoPhp - Versão Beta                                              |
 // +----------------------------------------------------------------------+
@@ -93,5 +92,4 @@ require_once "../mostraerros.php";
 	// NÃO ALTERAR!
 	include("include/funcoes_unibanco.php"); 
 	include("include/layout_unibanco.php");
-?>
 ?>
