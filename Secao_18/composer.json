@@ -4,6 +4,6 @@
     "type": "project",
     "minimum-stability": "dev",
     "require": {
-    	"monolog/monolog":"1.0."
+    	"monolog/monolog":"1.0.*"
     }
 }
