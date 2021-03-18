@@ -3,5 +3,7 @@
     "description": "curso de PHP7",
     "type": "project",
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+    	"monolog/monolog":"1.0."
+    }
 }
