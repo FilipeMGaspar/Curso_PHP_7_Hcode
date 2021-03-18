@@ -1,0 +1,7 @@
+{
+    "name": "user/secao_18",
+    "description": "curso de PHP7",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {}
+}
