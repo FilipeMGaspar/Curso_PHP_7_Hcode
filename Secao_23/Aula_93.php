@@ -7,4 +7,6 @@ require_once "../mostraerros.php";
 	if(!is_dir($pasta)){
 		mkdir($pasta);
 	}
+
+	echo "Directório criado com sucesso!";
 ?>
