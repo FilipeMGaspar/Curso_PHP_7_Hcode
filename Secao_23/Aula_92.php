@@ -4,7 +4,7 @@ require_once "../mostraerros.php";
 	
 	$id = (isset($_GET["id"]))?$_GET["id"]:7;
 
-	if(!is_numeric$id){
+	if(!is_numeric($id)){
 		exit("Foste Apanhado!");
 	}
 
