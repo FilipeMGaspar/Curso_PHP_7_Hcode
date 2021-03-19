@@ -21,5 +21,10 @@ require_once "../mostraerros.php";
 		5 - Leitura + execução
 		6 - Leitura e gravação
 		7 - Permissão total leitura, execução e gravação 
+
+		permissões de pastas no unix (linux)
+
+		Dono Grupo  Visitantes (outros)  
+		  7    7   		5
 	*/
 ?>
