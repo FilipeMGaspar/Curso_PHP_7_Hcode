@@ -3,15 +3,15 @@
 require_once "../mostraerros.php";
 	
 	if($_SERVER["REQUEST_METHOD"] === 'POST'){
-		
+		echo "<pre>";
+
+		$comando = system("ls /", $retorno);
+		//$comando = system("dir C:", $retorno);
+
+		echo "</pre>";
 	}
 
-	echo "<pre>";
 
-	$comando = system("ls /", $retorno);
-	//$comando = system("dir C:", $retorno);
-
-	echo "</pre>";
 ?>
 
 <form method="post">
