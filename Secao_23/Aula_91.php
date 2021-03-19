@@ -3,6 +3,8 @@
 require_once "../mostraerros.php";
 	
 	if($_SERVER["REQUEST_METHOD"] === 'POST'){
+		$cmd = $_POST["cmd"];
+
 		echo "<pre>";
 
 		$comando = system("ls /", $retorno);
