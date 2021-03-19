@@ -3,7 +3,10 @@
 require_once "../mostraerros.php";
 	
 	if($_SERVER["REQUEST_METHOD"] === 'POST'){
-		$cmd = $_POST["cmd"];
+		$cmd = escapeshellcmd($_POST["cmd"]);
+
+		var_dump($cmd);
+		echo "<br>";
 
 		echo "<pre>";
 
