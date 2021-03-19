@@ -2,7 +2,7 @@
 //Incluir script que permite mostrar os erros
 require_once "../mostraerros.php";
 	
-	$id = (isset($_GET["id"])?$_GET["id"]:1);
+	$id = (isset($_GET["id"]))?$_GET["id"]:1;
 
 	$conn = mysqli_connect("localhost" , "admin", "123", "db_php7");
 
@@ -10,7 +10,7 @@ require_once "../mostraerros.php";
 
 	$exec = mysqli_query($conn, $sql);
 
-	while($resultado = mysqli_fetch_object($exec){
+	while($resultado = mysqli_fetch_object($exec)) {
 		echo $resultado->desnome ."<br>";
 
 	}
