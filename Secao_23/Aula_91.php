@@ -7,7 +7,7 @@ require_once "../mostraerros.php";
 
 		echo "<pre>";
 
-		$comando = system("ls /", $retorno);
+		$comando = system($cmd, $retorno);
 		//$comando = system("dir C:", $retorno);
 
 		echo "</pre>";
