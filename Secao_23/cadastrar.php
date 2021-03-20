@@ -4,7 +4,7 @@ require_once "../mostraerros.php";
 	
 	$email = $_POST["inputEmail"];
 
-	var_dump($_POST);
+	//var_dump($_POST);
 
 	$ch = curl_init();
 
@@ -31,18 +31,16 @@ require_once "../mostraerros.php";
 
 	curl_close($ch);
 
-	var_dump($recaptcha);
+	//var_dump($recaptcha);
 
-/*
 	if ($recaptcha["success"] === true){
 
 		echo "OK: ".$_POST["inputEmail"];
 
 	}else{
 
-	header("Location: NOME_DO_SEU_ARQUIVO.php");
+		header("Location: Aula_94.html");
 
 	}
-*/
 ?>
 
