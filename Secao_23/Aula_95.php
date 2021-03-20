@@ -7,5 +7,7 @@
 //Incluir script que permite mostrar os erros
 require_once "../mostraerros.php";
 	
-
+	if(isset($_POST["busca"])){
+		echo $_POST["busca"];
+	}
 ?>
