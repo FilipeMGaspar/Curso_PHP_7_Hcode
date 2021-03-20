@@ -9,6 +9,9 @@ require_once "../mostraerros.php";
 	$ch = curl_init();
 
 	curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 
 	//6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
 ?>
