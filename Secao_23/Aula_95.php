@@ -11,6 +11,6 @@ require_once "../mostraerros.php";
 	
 	if(isset($_POST["busca"])){
 		//echo $_POST["busca"];
-		echo strip_tags($_POST["busca"], "<strong>");
+		echo strip_tags($_POST["busca"], "<strong><a>");
 	}
 ?>
