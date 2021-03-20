@@ -13,6 +13,36 @@ require_once "../mostraerros.php";
 
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 
-	//6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
+
+	curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array(
+
+		"secret"=>"6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe",
+
+		"response"=>$_POST["g-recaptcha-response"],
+
+		"remoteip"=>$_SERVER["REMOTE_ADDR"]
+
+	)));
+
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+
+	$recaptcha = json_decode(curl_exec($ch), true);
+
+	curl_close($ch);
+
+	var_dump($recaptcha);
+
+/*
+	if ($recaptcha["success"] === true){
+
+		echo "OK: ".$_POST["inputEmail"];
+
+	}else{
+
+	header("Location: NOME_DO_SEU_ARQUIVO.php");
+
+	}
+*/
 ?>
 
