@@ -6,6 +6,10 @@ require_once "../mostraerros.php";
 
 	var_dump($_POST);
 
+	$ch = curl_init();
+
+	curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+
 	//6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
 ?>
 
