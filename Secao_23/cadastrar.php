@@ -4,5 +4,8 @@ require_once "../mostraerros.php";
 	
 	$email = $_POST["inputEmail"];
 
-	var_dump($email);
+	var_dump($_POST);
+
+	//6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
 ?>
+
