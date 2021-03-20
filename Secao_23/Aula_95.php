@@ -10,7 +10,8 @@ require_once "../mostraerros.php";
 	$_POST["busca"] = '<a href="#"><strong>OLA!</strong></a><script>alert("Estás tramado!")</script>';
 	
 	if(isset($_POST["busca"])){
-		//echo $_POST["busca"];
+		echo $_POST["busca"];
+		echo "<br>";
 		echo strip_tags($_POST["busca"]);
 		echo "<br>";
 		echo strip_tags($_POST["busca"], "<strong><a>");
