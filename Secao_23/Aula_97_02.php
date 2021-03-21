@@ -17,11 +17,16 @@ require_once "../mostraerros.php";
 		SECRET_IV
 	);
 
-	echo $openssl;
+	echo $openssl."<br>";
 
 	$string = openssl_decrypt(
 		$openssl, 
 		'AES-128-CBC',
-		SECRET
+		SECRET,
+		0,
+		SECRET_IV
 	);
+
+	echo "<br>";
+	var_dump(json_decode($string, true));
 ?>
