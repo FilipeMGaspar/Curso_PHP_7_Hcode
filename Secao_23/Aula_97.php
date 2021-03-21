@@ -28,5 +28,5 @@ require_once "../mostraerros.php";
 		MCRYPT_MODE_ECB	
 	);
 
-	echo $string;
+	echo "<br>".$string;
 ?>
