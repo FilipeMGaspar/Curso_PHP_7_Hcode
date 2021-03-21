@@ -10,9 +10,23 @@ require_once "../mostraerros.php";
 
 	$mycrypt = mcrypt_encrypt(
 		MCRYPT_RIJNDAEL_128, 
-		SECRET, json_encode($data),
+		SECRET, 
+		json_encode($data),
 		MCRYPT_MODE_ECB
 	);
 
-	var_dump($mycrypt);
+	
+	$final = base64_encode($mycrypt);
+
+	var_dump($final);
+
+
+	$string = mcrypt_decrypt(
+		MCRYPT_RIJNDAEL_128,
+		SECRET, 
+		base64_decode($final), 
+		MCRYPT_MODE_ECB	
+	);
+
+	echo $string;
 ?>
